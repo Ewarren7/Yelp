@@ -21,7 +21,7 @@ class YelpBiz
     @@client
   end
 
-  ######Calss Methods########
+  ######Class Methods########
   def self.get_api_key
     path="../yelp_api_key.txt"
     api_keys = {}
@@ -52,6 +52,8 @@ class YelpBiz
     @@client.search_by_coordinates(self.loc,@@params,@@locale).businesses.collect {|x| x.url }
   end
 
+
+
   def self.get_all_closing_hours
     puts "Scraping for biz hours"
     urls = get_all_biz_urls
@@ -64,6 +66,8 @@ class YelpBiz
     end
   end
 
+
+#### CONVERTS YELP TIME STRING INTO REGEX 
   def self.conv_biz_hrs(time)
     time<<"0:00 pm - 00:00 pm" if time.length == 0 #account for ones without times listed
     times = time.first.to_s.split(" - ")
@@ -78,18 +82,16 @@ class YelpBiz
     c_am = c_times[5] == "am"
     
     yelp_biz_hours = {o_hour: o_hour, o_min: o_min, o_am: o_am, c_hour: c_hour, c_min: c_min, c_am: c_am}
-    
-
    end
 
-
+##### FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
   def self.is_open?(hours1)
     yelp_biz_hours = conv_biz_hrs(hours1)
     time_now = Time.new
     
     if !yelp_biz_hours[:c_am]
-      close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
-    else   
+      close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour]+12,yelp_biz_hours[:c_min])
+    else 
       close_time = Time.new(time_now.year,time_now.month,time_now.day + 1,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
     end
 
@@ -102,7 +104,6 @@ class YelpBiz
 
   ########Instance Methods############
   def initialize (name,address,image,url,categories,rating, hours)
-    
     @name = name
     @address = address
     @image= image
@@ -111,7 +112,6 @@ class YelpBiz
     @hours = hours
     @rating = rating
     @open_now = self.class.is_open?(@hours)
-
     @@all << self
   end
 

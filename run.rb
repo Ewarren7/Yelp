@@ -6,7 +6,9 @@ def run
   
   YelpBiz.get_all_nearby
   make_bizs
-  puts YelpBiz.all
+  if YelpBiz.open_now == true 
+  puts YelpBiz.name
+  end
   binding.pry
 end
 
