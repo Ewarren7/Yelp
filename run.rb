@@ -1,7 +1,7 @@
 require_relative 'environment'
 require_relative 'YelpBiz'
     
-def run
+def init_bizs
   
   
   YelpBiz.get_all_nearby
