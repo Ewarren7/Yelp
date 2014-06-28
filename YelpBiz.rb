@@ -1,7 +1,7 @@
 require_relative 'environment'
 
 class YelpBiz
-  attr_reader :name, :address, :image, :url, :categories, :hours, :yelp_biz_hours  
+  attr_reader :name, :address, :image, :url, :categories, :hours, :yelp_biz_hours, :open_now  
   HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
   @@all = []
   
@@ -55,7 +55,7 @@ class YelpBiz
   def self.get_all_closing_hours
     puts "Scraping for biz hours"
     urls = get_all_biz_urls
-    i=0
+    i=1
     hours = urls.collect do |url| 
       puts "Got #{i}"
       i+=1 
@@ -76,21 +76,28 @@ class YelpBiz
     c_hour= c_times[1].to_i
     c_min= c_times[3].to_i
     c_am = c_times[5] == "am"
-    if c_am #account for ones that close early morning next day
-      c_hour+=24
-    end
     
     yelp_biz_hours = {o_hour: o_hour, o_min: o_min, o_am: o_am, c_hour: c_hour, c_min: c_min, c_am: c_am}
-    "#{c_hour}#{c_min}".to_i
+    
 
    end
 
+
   def self.is_open?(hours1)
+    yelp_biz_hours = conv_biz_hrs(hours1)
+    time_now = Time.new
     
-    now_hour= Time.new.hour
-    Time.new.min < 10 ? now_min = "0#{Time.new.min}" : Time.new.min
-    binding.pry
-    "#{now_hour}#{now_min}".to_i < self.conv_biz_hrs(hours1)
+    if !yelp_biz_hours[:c_am]
+      close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
+    else   
+      close_time = Time.new(time_now.year,time_now.month,time_now.day + 1,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
+    end
+
+    return time_now < close_time
+  end
+
+  def self.all_open  
+    self.all.select {|place| place.open_now}
   end
 
   ########Instance Methods############
@@ -102,11 +109,13 @@ class YelpBiz
     @url= url
     @categories= categories
     @hours = hours
+    @rating = rating
     @open_now = self.class.is_open?(@hours)
 
     @@all << self
   end
 
+  
 
 
 
