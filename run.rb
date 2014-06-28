@@ -7,6 +7,7 @@ def run
   YelpBiz.get_all_nearby
   make_bizs
   puts YelpBiz.all
+  binding.pry
 end
 
 def make_bizs
@@ -20,7 +21,6 @@ def make_bizs
     categories= value.categories[0]
     rating = value.rating
     hours = all_closing_hours[index]
-    binding.pry
     YelpBiz.new(name,address,image,url,categories,rating,hours)
   end
 
