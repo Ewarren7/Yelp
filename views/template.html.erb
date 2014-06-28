@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+
+<head>
+  <title> still_open? </title>
+</head>
+
+  <body>
+    <ul>
+      <%YelpBiz.all_open.each do |biz| %>
+      <li><a href="<%biz.url%>">  <%=biz.name %> </a>  <li>
+       <% end %>
+    </ul>
+  </body>
+</html>
