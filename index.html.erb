@@ -6,7 +6,7 @@
 
   <body>
     <ul>
-      <%YelpBiz.all_open.each do |biz| %>
+      <%@all_open.each do |biz| %>
       <li><a href="<%biz.url%>">  <%=biz.name %> </a>  <li>
        <% end %>
     </ul>
