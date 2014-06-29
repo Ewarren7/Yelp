@@ -1,5 +1,5 @@
-require 'environment'
+require './environment'
 
 #use HelloController
-#use RegistrationsController
+use RandomController
 run RootController

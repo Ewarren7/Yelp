@@ -21,6 +21,10 @@ class YelpBiz
     @@client
   end
 
+  def self.all= (all_yaml) #for loading from yaml
+    @@all = all_yaml
+  end
+
   ######Class Methods########
   def self.get_api_key
     path="../yelp_api_key.txt"
@@ -54,15 +58,17 @@ class YelpBiz
 
 
 
-  def self.get_all_closing_hours
+  def self.get_all_closing_hours (dev = false)
     puts "Scraping for biz hours"
-    urls = get_all_biz_urls
-    i=1
-    hours = urls.collect do |url| 
-      puts "Got #{i}"
-      i+=1 
-      parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
-      parse.search("span.hour-range").collect {|name| name.text}
+    if !dev
+      urls = get_all_biz_urls
+      i=1
+      hours = urls.collect do |url| 
+        puts "Got #{i}"
+        i+=1 
+        parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
+        parse.search("span.hour-range").collect {|name| name.text}
+      end
     end
   end
 
@@ -100,6 +106,10 @@ class YelpBiz
 
   def self.all_open  
     self.all.select {|place| place.open_now}
+  end
+
+  def self.random_open
+    self.all_open.shuffle
   end
 
   ########Instance Methods############
