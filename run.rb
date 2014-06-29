@@ -17,7 +17,7 @@ def make_bizs(dev = false)
     YelpBiz.all= (all_bizs)
   
   else
-    all_closing_hours = YelpBiz.get_all_closing_hours if 
+    all_closing_hours = YelpBiz.get_all_closing_hours 
     
     YelpBiz.client.search_by_coordinates(YelpBiz.loc,YelpBiz.params,YelpBiz.locale).businesses.each_with_index do |value, index|
       name = value.name

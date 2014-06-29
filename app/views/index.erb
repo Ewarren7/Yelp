@@ -1,14 +1,40 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
+<html>
 <head>
-  <title> still_open? </title>
+
+<link rel="stylesheet" href="/style.css">
+
 </head>
 
-  <body>
-    <ul>
-      <%@all_open.each do |biz| %>
-      <li><a href=<%=biz.url%>>  <%=biz.name %> </a> </li>
-       <% end %>
-    </ul>
-  </body>
+<body>
+  <br>
+  <div class="name" style ="font-size:400; color:red;" > Welcome to still_open? </div>
+  <br>
+  <br>
+<table>
+  <%@all_open.each do |biz| %>
+<tr>
+<td>
+<section class="card">
+  <h1 style="text-align:center;" ><strong><%=biz.name%></strong></h1>
+  <div class="map"><img src=<%=biz.image%>></div>
+  <h2>Busniess Hours: <%=biz.hours.first%></h2>
+  <h2>Business Location:<%=biz.address%></h2>
+  <h2>Link to Yelp </h2>
+</section>
+</td>
+<td>
+<section class="card">
+  <h1 style="text-align:center;" ><strong><%=biz.name%></strong></h1>
+  <div class="map"><img src=<%=biz.image%>></div>
+  <h2>Busniess Hours: <%=biz.hours.first%></h2>
+  <h2>Business Location:<%=biz.address%></h2>
+  <h2>Link to Yelp </h2>
+</section>
+</td>
+<tr>
+  <%end%>
+</table>
+</body>
+
 </html>
