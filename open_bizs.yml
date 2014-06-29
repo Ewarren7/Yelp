@@ -1,85 +1,241 @@
 ---
 - !ruby/object:YelpBiz
-  name: Cowgirl Sea Horse
-  address: 259 Front St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/kHTCqAIHXUOagiInnQ0P4g/ms.jpg
-  url: http://www.yelp.com/biz/cowgirl-sea-horse-new-york
+  name: Barrio Chino
+  address: 253 Broome St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/koH2tZGngBr7k1d4lgeaEA/ms.jpg
+  url: http://www.yelp.com/biz/barrio-chino-new-york
   categories:
-  - Tex-Mex
-  - tex-mex
+  - Mexican
+  - mexican
   hours:
-  - 10:00 am - 2:00 am
+  - 10:00 am - 1:00 am
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: GRK
-  address: 111 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/hKOn9oaXw_tThNOYdTu6xA/ms.jpg
-  url: http://www.yelp.com/biz/grk-new-york
+  name: Cafe Katja
+  address: 79 Orchard St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/RAA-8wJfy_Bv7Pp1pTt1Uw/ms.jpg
+  url: http://www.yelp.com/biz/cafe-katja-new-york
   categories:
-  - Ethnic Food
-  - ethnicmarkets
+  - German
+  - german
   hours:
-  - 12:00 pm - 11:00 pm
-  rating: 3.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Fraunces Tavern
-  address: 54 Pearl St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/Mlr0OmnoiJCnamwDdlDd9A/ms.jpg
-  url: http://www.yelp.com/biz/fraunces-tavern-new-york-3
-  categories:
-  - American (Traditional)
-  - tradamerican
-  hours:
-  - 11:30 am - 2:30 am
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: The River Café
-  address: 1 Water St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/S2dSU1VlckGEkD6U0eHzGw/ms.jpg
-  url: http://www.yelp.com/biz/the-river-caf%C3%A9-brooklyn-3
-  categories:
-  - American (New)
-  - newamerican
-  hours:
-  - 5:30 pm - 11:00 pm
+  - 11:00 am - 3:30 pm5:00 pm - 11:00 pm
   rating: 4.5
   open_now: true
 - !ruby/object:YelpBiz
-  name: Dark Horse
-  address: 17 Murray St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/EzfGcYObqx0k2PSTsp5nqQ/ms.jpg
-  url: http://www.yelp.com/biz/dark-horse-new-york
+  name: Souvlaki GR
+  address: 116 Stanton St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/_JypKwpnGZfAUljhXxm2ZA/ms.jpg
+  url: http://www.yelp.com/biz/souvlaki-gr-new-york-3
   categories:
-  - American (Traditional)
-  - tradamerican
+  - Greek
+  - greek
   hours:
-  - 11:00 am - 2:00 am
+  - 11:00 am - 11:00 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Hop Lee Restaurant
-  address: 16 Mott St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/e-Ti51zG8e9-IIrwe8y6fQ/ms.jpg
-  url: http://www.yelp.com/biz/hop-lee-restaurant-new-york
+  name: Vanessa's Dumpling House
+  address: 118 Eldridge St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/TftLDZFqFXHFV09RM6GJ7g/ms.jpg
+  url: http://www.yelp.com/biz/vanessas-dumpling-house-new-york-2
   categories:
   - Chinese
   - chinese
+  hours:
+  - 7:30 am - 10:30 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Clinton St. Baking Company
+  address: 4 Clinton St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/XJ7k4rTgoQzlJdAAo6uEuQ/ms.jpg
+  url: http://www.yelp.com/biz/clinton-st-baking-company-new-york-2
+  categories:
+  - Breakfast & Brunch
+  - breakfast_brunch
+  hours:
+  - 9:00 am - 6:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: The Stanton Social
+  address: 99 Stanton St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/A-cdXKne8jb38cZ-i0J8jw/ms.jpg
+  url: http://www.yelp.com/biz/the-stanton-social-new-york
+  categories:
+  - Tapas/Small Plates
+  - tapasmallplates
+  hours:
+  - 11:30 am - 11:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Gaia Italian Café
+  address: 251 E Houston St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/WmCkeDM0bkSyDv_j86CSlA/ms.jpg
+  url: http://www.yelp.com/biz/gaia-italian-caf%C3%A9-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 0:00 pm - 00:00 pm
+  rating: 4.5
+  open_now: true
+- !ruby/object:YelpBiz
+  name: The MasalaWala
+  address: 179 Essex St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/mQr3NLpvhP3swsHQywVe1A/ms.jpg
+  url: http://www.yelp.com/biz/the-masalawala-new-york-2
+  categories:
+  - Indian
+  - indpak
+  hours:
+  - 12:00 pm - 12:00 am
+  rating: 4.5
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Prosperity Dumpling
+  address: 46 Eldridge St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/JQUthGQdkpylKm0hpK81ig/ms.jpg
+  url: http://www.yelp.com/biz/prosperity-dumpling-new-york
+  categories:
+  - Chinese
+  - chinese
+  hours:
+  - 7:00 am - 10:30 pm
+  rating: 4.5
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Katz's Delicatessen
+  address: 205 E Houston St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/7TbxPf6pH-hN1rYN_mDs_Q/ms.jpg
+  url: http://www.yelp.com/biz/katzs-delicatessen-new-york
+  categories:
+  - Delis
+  - delis
+  hours:
+  - 6:00 am - 10:30 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Cornerstone Cafe
+  address: 17 Ave B
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/wEvmGAF-gJK1vx2-ligDOQ/ms.jpg
+  url: http://www.yelp.com/biz/cornerstone-cafe-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 8:00 am - 11:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Taqueria Lower East Side
+  address: 198 Orchard St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/aF51IMVpKFBZHSwhYG9svA/ms.jpg
+  url: http://www.yelp.com/biz/taqueria-lower-east-side-new-york
+  categories:
+  - Mexican
+  - mexican
   hours:
   - 11:00 am - 12:00 am
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Joe's Shanghai
-  address: 9 Pell St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/sGUC2KUWoEsyW6lA385THQ/ms.jpg
-  url: http://www.yelp.com/biz/joes-shanghai-new-york-2
+  name: The Boil
+  address: 139 Chrystie St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/OxuEpY8k-YWMys1dWlL9SQ/ms.jpg
+  url: http://www.yelp.com/biz/the-boil-new-york-3
+  categories:
+  - Cajun/Creole
+  - cajun
+  hours:
+  - 4:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Supper
+  address: 156 E 2nd St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/ZLEsT9yvCxxtBNPrlL5d-g/ms.jpg
+  url: http://www.yelp.com/biz/supper-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 11:00 am - 12:00 am
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Cafe Cortadito
+  address: 210 E 3rd St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/QkhIqu3dhL69LzQ841vvpA/ms.jpg
+  url: http://www.yelp.com/biz/cafe-cortadito-new-york
+  categories:
+  - Cuban
+  - cuban
+  hours:
+  - 11:30 am - 10:00 pm
+  rating: 3.5
+  open_now: true
+- !ruby/object:YelpBiz
+  name: 'Wah Fung #1 Fast Food'
+  address: 79 Chrystie St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/-6V1evaYHK34OZeL6NSP_A/ms.jpg
+  url: http://www.yelp.com/biz/wah-fung-1-fast-food-new-york-2
+  categories:
+  - Chinese
+  - chinese
+  hours:
+  - 10:00 am - 6:00 pm
+  rating: 4.5
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Fonda
+  address: 40 Avenue B
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/cyAMyUEkSXrBqAuSKMe8wA/ms.jpg
+  url: http://www.yelp.com/biz/fonda-new-york
+  categories:
+  - Mexican
+  - mexican
+  hours:
+  - 11:00 am - 4:00 pm5:00 pm - 10:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Cafe Himalaya
+  address: 78 E 1st St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/OOw6S4XdcaAyIvnVZ0GkAQ/ms.jpg
+  url: http://www.yelp.com/biz/cafe-himalaya-new-york-2
+  categories:
+  - Asian Fusion
+  - asianfusion
+  hours:
+  - 12:00 pm - 9:30 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Public
+  address: 210 Elizabeth St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/_oAzMHqkbjE7fOIDsTCfoQ/ms.jpg
+  url: http://www.yelp.com/biz/public-new-york
+  categories:
+  - American (New)
+  - newamerican
+  hours:
+  - 10:30 am - 3:30 pm6:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Shanghai Café
+  address: 100 Mott St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/NoG9jrNhOT02_ixXqS7Lag/ms.jpg
+  url: http://www.yelp.com/biz/shanghai-caf%C3%A9-new-york-2
   categories:
   - Shanghainese
   - shanghainese
   hours:
-  - 11:00 am - 11:00 pm
-  rating: 4.0
+  - 11:30 am - 10:00 pm
+  rating: 3.5
   open_now: true

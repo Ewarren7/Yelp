@@ -90,21 +90,41 @@ class YelpBiz
     c_am = c_times[5] == "am"
     
     yelp_biz_hours = {o_hour: o_hour, o_min: o_min, o_am: o_am, c_hour: c_hour, c_min: c_min, c_am: c_am}
+    conv_to_mil_time (yelp_biz_hours) ##returns ohour and c hour in mil time. am and pm still included in hash
    end
 
-  def self.is_open?(hours1) #FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
-    yelp_biz_hours = conv_biz_hrs(hours1)
+  def self.is_open?(hours_from_yelp) #FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
+    yelp_biz_hours = conv_biz_hrs(hours_from_yelp)
     time_now = Time.new
     
-    if !yelp_biz_hours[:c_am]
-      close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour]+12,yelp_biz_hours[:c_min])
-    else 
+    open_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:o_hour],yelp_biz_hours[:o_min])
+    
+    #account for biz closing next day early AM by adding 1 day to time object if close hour is AM
+    if yelp_biz_hours[:c_am] 
       close_time = Time.new(time_now.year,time_now.month,time_now.day + 1,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
+    else 
+      close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])      
     end
 
-    return time_now < close_time
+    return false if time_now < open_time #returns true or false that biz hasn't opened yet
+    return time_now < close_time #returns true or false that current time is before biz closing time
   end
 
+  def self.conv_to_mil_time (yhours)
+    #if open during pm, add 12 hours to ohour
+    if !yhours[:o_am] 
+      yhours[:o_hour] = yhours[:o_hour] += 12 unless yhours[:o_hour] == 12 
+    end
+      
+    #if close during pm, add 12 to chour
+    yhours[:s_hour] = yhours[:c_hour] += 12 if !yhours[:c_am]
+      
+    #if closes at midnight hour, make chour 24
+    yhours[:c_hour] = 24 if yhours[:c_am] && yhours[:c_hour] == 12
+      
+    return yhours
+  end
+ 
   def self.all_open  
     self.all.select {|place| place.open_now}
   end
@@ -137,7 +157,16 @@ class YelpBiz
     @@all << self
   end
 
+  def recheck_open
+    @open_now = self.class.is_open?(@hours)
+  end
+
+  def get_biz_hours_array
+    self.class.conv_biz_hrs(@hours)
+  end
+
   
+
 
 
 

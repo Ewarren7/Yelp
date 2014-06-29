@@ -13,7 +13,9 @@ def make_bizs(dev = false)
   if dev 
     #raise '!!!!!!!dev mode active!!'
     all_bizs = YAML.load(File.read('./all_bizs.yml'))
-    open_bizs = YAML.load(File.read('./open_bizs.yml'))
+    #all_bizs = all_bizsO.select {|biz| biz.name == "The Boil"} #for testing biz with 2 closing times
+    all_bizs.each {|biz| biz.recheck_open}
+    
     YelpBiz.all= (all_bizs)
   
   else
@@ -35,7 +37,7 @@ def make_bizs(dev = false)
 
    
     File.open('./all_bizs.yml', 'w') {|f| f.write(YAML.dump(all_bizs)) } 
-    File.open('./open_bizs.yml', 'w') {|f| f.write(YAML.dump(open_bizs)) }
+    
   end
 end
 
