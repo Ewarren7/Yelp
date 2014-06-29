@@ -1,17 +1,5 @@
 ---
 - !ruby/object:YelpBiz
-  name: Alfanoose
-  address: 64 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/l4Y8x6yUFrGdyv3OBxi3eQ/ms.jpg
-  url: http://www.yelp.com/biz/alfanoose-new-york
-  categories:
-  - Lebanese
-  - lebanese
-  hours:
-  - 11:30 am - 9:30 pm
-  rating: 3.5
-  open_now: true
-- !ruby/object:YelpBiz
   name: Cowgirl Sea Horse
   address: 259 Front St
   image: http://s3-media4.fl.yelpcdn.com/bphoto/kHTCqAIHXUOagiInnQ0P4g/ms.jpg
@@ -48,18 +36,6 @@
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Tajin
-  address: 85 Greenwich St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/72-vdb-22lKJewfq2J52XQ/ms.jpg
-  url: http://www.yelp.com/biz/tajin-new-york
-  categories:
-  - Mexican
-  - mexican
-  hours:
-  - 12:00 pm - 9:00 pm
-  rating: 3.5
-  open_now: true
-- !ruby/object:YelpBiz
   name: The River Café
   address: 1 Water St
   image: http://s3-media2.fl.yelpcdn.com/bphoto/S2dSU1VlckGEkD6U0eHzGw/ms.jpg
@@ -84,30 +60,6 @@
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Benares
-  address: 45 Murray St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/ZFU5G1KM15mAzxOvoS1tEQ/ms.jpg
-  url: http://www.yelp.com/biz/benares-new-york-2
-  categories:
-  - Indian
-  - indpak
-  hours:
-  - 11:00 am - 10:30 pm
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Buddha Bodai
-  address: 5 Mott St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/KX-4YAIOIYr9dIyHnYXBvQ/ms.jpg
-  url: http://www.yelp.com/biz/buddha-bodai-new-york
-  categories:
-  - Vegetarian
-  - vegetarian
-  hours:
-  - 10:00 am - 10:00 pm
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
   name: Hop Lee Restaurant
   address: 16 Mott St
   image: http://s3-media4.fl.yelpcdn.com/bphoto/e-Ti51zG8e9-IIrwe8y6fQ/ms.jpg
@@ -117,18 +69,6 @@
   - chinese
   hours:
   - 11:00 am - 12:00 am
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Shanghai Asian Manor
-  address: 21 Mott St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/wLjk7DKW6JDAiyzIb8DhQw/ms.jpg
-  url: http://www.yelp.com/biz/shanghai-asian-manor-new-york
-  categories:
-  - Shanghainese
-  - shanghainese
-  hours:
-  - 11:00 am - 10:00 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
