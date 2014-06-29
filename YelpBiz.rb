@@ -1,27 +1,20 @@
 require_relative 'environment'
 
 class YelpBiz
-  attr_reader :name, :address, :image, :url, :categories, :hours, :yelp_biz_hours, :open_now  
+  attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now  
+  attr_accessor :hours
   HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
   @@all = []
   @@shuffled = []
-  #@@random_open = []
-  @@i = -1#random counter var
-  ####Class Var Readers#######
-  def self.params
-    @@params
-  end
-
-  def self.locale
-    @@locale
-  end
-    def self.all
+  
+  @@i = -1 #counter var for random restaurant method
+ 
+  ####Class Var Readers & Writers#######
+  
+  def self.all
     @@all
   end
 
-  def self.client
-    @@client
-  end
 
   def self.all= (all_yaml) #for loading from yaml
     @@all = all_yaml
@@ -40,11 +33,7 @@ class YelpBiz
      @@api_keys = api_keys
   end
 
-  def self.get_all_nearby
-    @@params = {term: 'food',limit: 20, sort: 1}
-    @@locale = {lang: 'eng'}
-    @@client = Yelp::Client.new(self.get_api_key)
-  end
+
 
   def self.loc
     page = "http://freegeoip.net/json/"
@@ -53,31 +42,18 @@ class YelpBiz
     return {latitude: loc[3], longitude: loc[5]}
   end
 
-  
-  def self.get_all_biz_urls
-    @@client.search_by_coordinates(self.loc,@@params,@@locale).businesses.collect {|x| x.url }
-  end
 
-
-
-  def self.get_all_closing_hours (dev = false)
-    puts "Scraping for biz hours"
-    if !dev
-      urls = get_all_biz_urls
-      i=1
-      hours = urls.collect do |url| 
-        puts "Got #{i}"
-        i+=1 
-        parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
-        parse.search("span.hour-range").collect {|name| name.text}
-      end
-    end
+  def self.get_hours(url, index)
+    puts "Found #{index +1} fooderies, getting hours"
+    parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
+    parse.search("span.hour-range").collect {|name| name.text}
+ 
   end
 
 
 
   def self.conv_biz_hrs(time) # CONVERTS YELP TIME STRING INTO REGEX 
-    time<<"0:00 pm - 00:00 am" if time.length == 0 #account for ones without times listed
+    return "no times" if time.length == 0 #account for ones without times listed
     times = time.first.to_s.split(" - ")
     
     o_times= /(\d+)(:)(\d+)( )([a-z]+)/.match(times[0])
@@ -95,17 +71,18 @@ class YelpBiz
 
   def self.is_open?(hours_from_yelp) #FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
     yelp_biz_hours = conv_biz_hrs(hours_from_yelp)
+    return false if yelp_biz_hours == "no times"
     time_now = Time.new
     
     open_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:o_hour],yelp_biz_hours[:o_min])
     
     #account for biz closing next day early AM by adding 1 day to time object if close hour is AM
-    if yelp_biz_hours[:c_am] 
+    if yelp_biz_hours[:c_am]
       close_time = Time.new(time_now.year,time_now.month,time_now.day + 1,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
-    else 
+    else !yelp_biz_hours[:c_am]
       close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])      
     end
-
+    
     return false if time_now < open_time #returns true or false that biz hasn't opened yet
     return time_now < close_time #returns true or false that current time is before biz closing time
   end

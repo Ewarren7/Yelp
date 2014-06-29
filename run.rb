@@ -1,41 +1,35 @@
 require_relative 'environment'
 require_relative 'YelpBiz'
-    
-def init_bizs(dev = false)
-  
-  
-  YelpBiz.get_all_nearby if !dev
-  make_bizs(dev)
-  
-end
+
+
 
 def make_bizs(dev = false)
   if dev 
-    #raise '!!!!!!!dev mode active!!'
     all_bizs = YAML.load(File.read('./all_bizs.yml'))
-    #all_bizs = all_bizsO.select {|biz| biz.name == "The Boil"} #for testing biz with 2 closing times
+    #all_bizs = all_bizsO.select {|biz| biz.name == "Gaia Italian Café"} #for testing biz with 2 closing times
     all_bizs.each {|biz| biz.recheck_open}
     
     YelpBiz.all= (all_bizs)
   
   else
-    all_closing_hours = YelpBiz.get_all_closing_hours 
+    #set variables need for yelp gem
+    params = {term: 'food',limit: 20, sort: 1}
+    locale = {lang: 'eng'}
+    yelp_api_results = Yelp::Client.new(YelpBiz.get_api_key)
+
     
-    YelpBiz.client.search_by_coordinates(YelpBiz.loc,YelpBiz.params,YelpBiz.locale).businesses.each_with_index do |value, index|
+    yelp_api_results.search_by_coordinates(YelpBiz.loc,params,locale).businesses.each_with_index do |value, index|
       name = value.name
       address = value.location.address.shift
       image = value.image_url
       url = value.url
       categories= value.categories[0]
       rating = value.rating
-      hours = all_closing_hours[index]
+      hours = YelpBiz.get_hours(url,index)
       YelpBiz.new(name,address,image,url,categories,rating,hours)
     end
 
     all_bizs = YelpBiz.all 
-    open_bizs= YelpBiz.all_open
-
-   
     File.open('./all_bizs.yml', 'w') {|f| f.write(YAML.dump(all_bizs)) } 
     
   end

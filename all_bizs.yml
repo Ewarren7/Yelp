@@ -79,22 +79,9 @@
   categories:
   - Italian
   - italian
-  hours:
-  - 0:00 pm - 00:00 am
+  hours: []
   rating: 4.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: The Meatball Shop
-  address: 84 Stanton St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/wkEWfHX-UMpHK1KUwIR1OA/ms.jpg
-  url: http://www.yelp.com/biz/the-meatball-shop-new-york
-  categories:
-  - Italian
-  - italian
-  hours:
-  - 12:00 pm - 12:00 am
-  rating: 4.0
-  open_now: true
+  open_now: false
 - !ruby/object:YelpBiz
   name: The MasalaWala
   address: 179 Essex St
@@ -104,7 +91,7 @@
   - Indian
   - indpak
   hours:
-  - 7:00 am - 10:30 pm
+  - 12:00 pm - 12:00 am
   rating: 4.5
   open_now: true
 - !ruby/object:YelpBiz
@@ -116,7 +103,7 @@
   - Chinese
   - chinese
   hours:
-  - 6:00 am - 10:30 pm
+  - 7:00 am - 10:30 pm
   rating: 4.5
   open_now: true
 - !ruby/object:YelpBiz
@@ -128,7 +115,7 @@
   - Delis
   - delis
   hours:
-  - 8:00 am - 11:00 pm
+  - 6:00 am - 10:30 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
@@ -140,7 +127,7 @@
   - Italian
   - italian
   hours:
-  - 11:00 am - 12:00 am
+  - 8:00 am - 11:00 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
@@ -152,9 +139,9 @@
   - Mexican
   - mexican
   hours:
-  - 4:00 pm - 11:00 pm
+  - 11:00 am - 12:00 am
   rating: 4.0
-  open_now: false
+  open_now: true
 - !ruby/object:YelpBiz
   name: The Boil
   address: 139 Chrystie St
@@ -164,9 +151,9 @@
   - Cajun/Creole
   - cajun
   hours:
-  - 11:00 am - 12:00 am
+  - 4:00 pm - 11:00 pm
   rating: 4.0
-  open_now: true
+  open_now: false
 - !ruby/object:YelpBiz
   name: Supper
   address: 156 E 2nd St
@@ -176,7 +163,7 @@
   - Italian
   - italian
   hours:
-  - 11:30 am - 10:00 pm
+  - 11:00 am - 12:00 am
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
@@ -188,7 +175,7 @@
   - Cuban
   - cuban
   hours:
-  - 10:00 am - 6:00 pm
+  - 11:30 am - 10:00 pm
   rating: 3.5
   open_now: true
 - !ruby/object:YelpBiz
@@ -200,7 +187,7 @@
   - Chinese
   - chinese
   hours:
-  - 11:00 am - 4:00 pm5:00 pm - 10:00 pm
+  - 10:00 am - 6:00 pm
   rating: 4.5
   open_now: true
 - !ruby/object:YelpBiz
@@ -212,7 +199,7 @@
   - Mexican
   - mexican
   hours:
-  - 12:00 pm - 9:30 pm
+  - 11:00 am - 4:00 pm5:00 pm - 10:00 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
@@ -224,7 +211,7 @@
   - Asian Fusion
   - asianfusion
   hours:
-  - 10:30 am - 3:30 pm6:00 pm - 10:30 pm
+  - 12:00 pm - 9:30 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
@@ -236,6 +223,18 @@
   - American (New)
   - newamerican
   hours:
-  - 11:30 am - 10:00 pm
+  - 10:30 am - 3:30 pm6:00 pm - 10:30 pm
   rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Shanghai Café
+  address: 100 Mott St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/NoG9jrNhOT02_ixXqS7Lag/ms.jpg
+  url: http://www.yelp.com/biz/shanghai-caf%C3%A9-new-york-2
+  categories:
+  - Shanghainese
+  - shanghainese
+  hours:
+  - 11:30 am - 10:00 pm
+  rating: 3.5
   open_now: true
