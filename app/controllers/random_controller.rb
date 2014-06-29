@@ -1,10 +1,12 @@
 class RandomController < ApplicationController
   
+  
+
+
   get '/random' do
-    i=0
-    random_open = YelpBiz.all_open.shuffle
-    @random_biz = random_open[i]
-    i+=1
+    init_bizs (true) if YelpBiz.all == []
+    @random_biz = YelpBiz.suffle_open
+    #binding.pry
     erb :random
   end
 

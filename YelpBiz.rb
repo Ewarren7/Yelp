@@ -4,7 +4,9 @@ class YelpBiz
   attr_reader :name, :address, :image, :url, :categories, :hours, :yelp_biz_hours, :open_now  
   HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
   @@all = []
-  
+  @@shuffled = []
+  #@@random_open = []
+  @@i = -1#random counter var
   ####Class Var Readers#######
   def self.params
     @@params
@@ -73,8 +75,8 @@ class YelpBiz
   end
 
 
-#### CONVERTS YELP TIME STRING INTO REGEX 
-  def self.conv_biz_hrs(time)
+
+  def self.conv_biz_hrs(time) # CONVERTS YELP TIME STRING INTO REGEX 
     time<<"0:00 pm - 00:00 pm" if time.length == 0 #account for ones without times listed
     times = time.first.to_s.split(" - ")
     
@@ -90,8 +92,7 @@ class YelpBiz
     yelp_biz_hours = {o_hour: o_hour, o_min: o_min, o_am: o_am, c_hour: c_hour, c_min: c_min, c_am: c_am}
    end
 
-##### FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
-  def self.is_open?(hours1)
+  def self.is_open?(hours1) #FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
     yelp_biz_hours = conv_biz_hrs(hours1)
     time_now = Time.new
     
@@ -110,6 +111,17 @@ class YelpBiz
 
   def self.random_open
     self.all_open.shuffle
+  end
+
+  def self.suffle_open
+
+    #binding.pry
+    @@random_open ||= YelpBiz.all_open.shuffle
+    @@i + 1 == @@random_open.length ? @@i = 0 : @@i+=1
+    @@random_open.each {|place| puts place.name}
+    @@random_open[@@i]
+
+    #binding.pry
   end
 
   ########Instance Methods############
