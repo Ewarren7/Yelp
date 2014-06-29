@@ -77,7 +77,7 @@ class YelpBiz
 
 
   def self.conv_biz_hrs(time) # CONVERTS YELP TIME STRING INTO REGEX 
-    time<<"0:00 pm - 00:00 pm" if time.length == 0 #account for ones without times listed
+    time<<"0:00 pm - 00:00 am" if time.length == 0 #account for ones without times listed
     times = time.first.to_s.split(" - ")
     
     o_times= /(\d+)(:)(\d+)( )([a-z]+)/.match(times[0])
@@ -117,7 +117,7 @@ class YelpBiz
     end
       
     #if close during pm, add 12 to chour
-    yhours[:s_hour] = yhours[:c_hour] += 12 if !yhours[:c_am]
+    yhours[:c_hour] = yhours[:c_hour] += 12 if !yhours[:c_am]
       
     #if closes at midnight hour, make chour 24
     yhours[:c_hour] = 24 if yhours[:c_am] && yhours[:c_hour] == 12
@@ -142,6 +142,15 @@ class YelpBiz
     @@random_open[@@i]
 
     #binding.pry
+  end
+
+  def self.show_times #puts info to console to make sure tiem calcs working
+    @@all.each do |biz|
+      puts biz.name
+      puts biz.hours
+      puts biz.get_biz_hours_array 
+      puts ""
+    end
   end
 
   ########Instance Methods############
