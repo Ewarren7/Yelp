@@ -1,7 +1,7 @@
 require_relative 'environment'
 
 class YelpBiz
-  attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now  
+  attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now, :lat, :lon 
   attr_accessor :hours
   HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
   @@all = []
@@ -33,13 +33,24 @@ class YelpBiz
      @@api_keys = api_keys
   end
 
+  def self.set_location (lat,lon)
+    if lat=="" || lon =="" #if html5 location isnt passed, revert to this method
+      page = "http://freegeoip.net/json/"
+      doc = Nokogiri::HTML(open(page, 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36'))
+      loc = /(latitude)(\":)(\d+.\d+)(,\"longitude\":)(-\d+.\d+)/.match(doc.text)
+      @lat = loc[3]
+      @lon = loc[5]
+      binding.pry
+    else
+      @lat = lat
+      @lon = lon
+    end
 
+    
+  end
 
   def self.loc
-    page = "http://freegeoip.net/json/"
-    doc = Nokogiri::HTML(open(page, 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36'))
-    loc = /(latitude)(\":)(\d+.\d+)(,\"longitude\":)(-\d+.\d+)/.match(doc.text)
-    return {latitude: loc[3], longitude: loc[5]}
+    return {latitude: @lat, longitude: @lon}
   end
 
 
@@ -53,9 +64,11 @@ class YelpBiz
 
 
   def self.conv_biz_hrs(time) # CONVERTS YELP TIME STRING INTO REGEX 
-    return "no times" if time.length == 0 #account for ones without times listed
-    times = time.first.to_s.split(" - ")
     
+  
+    times = time.first.to_s.split(" - ")
+    puts time
+    puts times
     o_times= /(\d+)(:)(\d+)( )([a-z]+)/.match(times[0])
     c_times= /(\d+)(:)(\d+)( )([a-z]+)/.match(times[1])
     o_hour= o_times[1].to_i
@@ -70,14 +83,20 @@ class YelpBiz
    end
 
   def self.is_open?(hours_from_yelp) #FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
+    return true if hours_from_yelp[0] == "Open 24 hours"
+    return false if hours_from_yelp[0].length == 0 #account for ones without times listed
+    
     yelp_biz_hours = conv_biz_hrs(hours_from_yelp)
-    return false if yelp_biz_hours == "no times"
+    
+    
     time_now = Time.new
     
     open_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:o_hour],yelp_biz_hours[:o_min])
     
     #account for biz closing next day early AM by adding 1 day to time object if close hour is AM
     if yelp_biz_hours[:c_am]
+      puts hours_from_yelp
+      puts yelp_biz_hours
       close_time = Time.new(time_now.year,time_now.month,time_now.day + 1,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
     else !yelp_biz_hours[:c_am]
       close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])      
@@ -96,8 +115,8 @@ class YelpBiz
     #if close during pm, add 12 to chour
     yhours[:c_hour] = yhours[:c_hour] += 12 if !yhours[:c_am]
       
-    #if closes at midnight hour, make chour 24
-    yhours[:c_hour] = 24 if yhours[:c_am] && yhours[:c_hour] == 12
+    #if closes at midnight, make chour 24
+    yhours[:c_hour] = 24 if yhours[:c_am] && yhours[:c_hour] == 12 && yhours[:c_min] == 0
       
     return yhours
   end

@@ -3,8 +3,6 @@
 <body>
 
 <p id="demo">Getting your location... </p>
-<button onclick="subCoors()">Find Open Places!</button>
-
 <div id="mapholder"></div>
 
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -25,7 +23,7 @@ function showPosition(position) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     document.getElementById('lat').value = lat;
-    document.getElementById('long').value = lon;
+    document.getElementById('lon').value = lon;
  
     latlon = new google.maps.LatLng(lat, lon)
     mapholder = document.getElementById('mapholder')
@@ -63,20 +61,14 @@ function showError(error) {
     
 }
 
-function subCoors(position) {
-  
-  xmlhttp.open("POST","/go",true);
-  xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-  xmlhttp.send(send_string);
-}
 
 </script>
 
 
 <form id="myForm" action='/go' method="post">
-  <input type='text' id="lat" name='lat' value='' />
-  <input type='text' id="long" name='long' value='' />
-  <input type='submit' name='submit' value='GO!!' onsubmit='addParam()' />
+  <input type='hidden' id="lat" name='lat' value='' />
+  <input type='hidden' id="lon" name='lon' value='' />
+  <input type='submit' name='submit' value='Whats Open?' onsubmit='addParam()' />
 </form>
 
 </body>

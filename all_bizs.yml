@@ -1,159 +1,172 @@
 ---
 - !ruby/object:YelpBiz
-  name: Barrio Chino
-  address: 253 Broome St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/koH2tZGngBr7k1d4lgeaEA/ms.jpg
-  url: http://www.yelp.com/biz/barrio-chino-new-york
+  name: Caracas Arepa Bar
+  address: 93 1/2 E 7th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/M3QNmoYOYmfbX9tcTqr4ww/ms.jpg
+  url: http://www.yelp.com/biz/caracas-arepa-bar-new-york
   categories:
-  - Mexican
-  - mexican
+  - Venezuelan
+  - venezuelan
+  hours:
+  - 12:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Kyo Ya
+  address: 94 E 7th St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/nvnk0aSAiPu8IwV8W3hx8g/ms.jpg
+  url: http://www.yelp.com/biz/kyo-ya-new-york
+  categories:
+  - Japanese
+  - japanese
+  hours:
+  - 5:30 pm - 10:30 pm
+  rating: 4.5
+  open_now: false
+- !ruby/object:YelpBiz
+  name: Paprika
+  address: 110 St Marks Pl
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/nOJL1QkGZ2oovc6Xf4Ou3w/ms.jpg
+  url: http://www.yelp.com/biz/paprika-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 12:00 pm - 11:00 pm
+  rating: 3.5
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Cafe Mogador
+  address: 101 St Marks Pl
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/54HFP4h5CZWMSuSdy2jd2A/ms.jpg
+  url: http://www.yelp.com/biz/cafe-mogador-new-york
+  categories:
+  - Moroccan
+  - moroccan
+  hours:
+  - 9:00 am - 1:00 am
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Maharlika
+  address: 111 1st Ave
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/yiqiYnEA0s005lzcr790hQ/ms.jpg
+  url: http://www.yelp.com/biz/maharlika-new-york
+  categories:
+  - Filipino
+  - filipino
+  hours:
+  - 11:00 am - 3:30 pm5:00 pm - 9:30 pm
+  rating: 4.0
+  open_now: false
+- !ruby/object:YelpBiz
+  name: Pylos
+  address: 128 E 7th St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/ipvbB3JuEQaIYXAEIyjnkw/ms.jpg
+  url: http://www.yelp.com/biz/pylos-new-york
+  categories:
+  - Greek
+  - greek
+  hours:
+  - 11:30 am - 4:00 pm5:00 pm - 12:00 am
+  rating: 4.5
+  open_now: false
+- !ruby/object:YelpBiz
+  name: Ugly Kitchen
+  address: 103 1st Ave
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/bdq3jyvUJKFn1aNsKYAIWA/ms.jpg
+  url: http://www.yelp.com/biz/ugly-kitchen-new-york
+  categories:
+  - Bars
+  - bars
+  hours:
+  - 5:00 pm - 12:00 am
+  rating: 4.0
+  open_now: false
+- !ruby/object:YelpBiz
+  name: Yuca Bar & Restaurant
+  address: 111 Ave A
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/xozSkI2zo5iJDA4_7AKi6A/ms.jpg
+  url: http://www.yelp.com/biz/yuca-bar-and-restaurant-new-york
+  categories:
+  - Latin American
+  - latin
   hours:
   - 10:00 am - 1:00 am
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Cafe Katja
-  address: 79 Orchard St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/RAA-8wJfy_Bv7Pp1pTt1Uw/ms.jpg
-  url: http://www.yelp.com/biz/cafe-katja-new-york
+  name: Momofuku Ko
+  address: 163 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/_FDlAzS11dPkeUc66uI6EQ/ms.jpg
+  url: http://www.yelp.com/biz/momofuku-ko-new-york
   categories:
-  - German
-  - german
+  - American (New)
+  - newamerican
   hours:
-  - 11:00 am - 3:30 pm5:00 pm - 11:00 pm
-  rating: 4.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Souvlaki GR
-  address: 116 Stanton St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/_JypKwpnGZfAUljhXxm2ZA/ms.jpg
-  url: http://www.yelp.com/biz/souvlaki-gr-new-york-3
-  categories:
-  - Greek
-  - greek
-  hours:
-  - 11:00 am - 11:00 pm
+  - 12:30 pm - 10:00 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Vanessa's Dumpling House
-  address: 118 Eldridge St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/TftLDZFqFXHFV09RM6GJ7g/ms.jpg
-  url: http://www.yelp.com/biz/vanessas-dumpling-house-new-york-2
+  name: Café Orlin
+  address: 41 St. Marks Pl
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/Wvd2qU6PSoTjHHtZ9Go0HA/ms.jpg
+  url: http://www.yelp.com/biz/caf%C3%A9-orlin-new-york-2
   categories:
-  - Chinese
-  - chinese
+  - Middle Eastern
+  - mideastern
   hours:
-  - 7:30 am - 10:30 pm
+  - 8:30 am - 12:30 am
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Clinton St. Baking Company
-  address: 4 Clinton St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/XJ7k4rTgoQzlJdAAo6uEuQ/ms.jpg
-  url: http://www.yelp.com/biz/clinton-st-baking-company-new-york-2
+  name: Nai Tapas Bar
+  address: 174 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/STyAj68kasZsAePRhO22zQ/ms.jpg
+  url: http://www.yelp.com/biz/nai-tapas-bar-new-york
   categories:
-  - Breakfast & Brunch
-  - breakfast_brunch
+  - Tapas Bars
+  - tapas
   hours:
-  - 9:00 am - 6:00 pm
+  - 2:00 pm - 10:00 pm
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: The Stanton Social
-  address: 99 Stanton St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/A-cdXKne8jb38cZ-i0J8jw/ms.jpg
-  url: http://www.yelp.com/biz/the-stanton-social-new-york
+  name: Veselka
+  address: 144 2nd Ave
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/hZ49P5dz2n35GL0zXgAm5Q/ms.jpg
+  url: http://www.yelp.com/biz/veselka-new-york
   categories:
-  - Tapas/Small Plates
-  - tapasmallplates
+  - Diners
+  - diners
   hours:
-  - 11:30 am - 11:00 pm
-  rating: 4.0
+  - Open 24 hours
+  rating: 3.5
   open_now: true
 - !ruby/object:YelpBiz
-  name: Gaia Italian Café
-  address: 251 E Houston St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/WmCkeDM0bkSyDv_j86CSlA/ms.jpg
-  url: http://www.yelp.com/biz/gaia-italian-caf%C3%A9-new-york
+  name: Jeepney
+  address: 201 1st Ave
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/reqeWyYWsbTsijocsUDkDg/ms.jpg
+  url: http://www.yelp.com/biz/jeepney-new-york
   categories:
-  - Italian
-  - italian
-  hours: []
-  rating: 4.5
-  open_now: false
-- !ruby/object:YelpBiz
-  name: The MasalaWala
-  address: 179 Essex St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/mQr3NLpvhP3swsHQywVe1A/ms.jpg
-  url: http://www.yelp.com/biz/the-masalawala-new-york-2
-  categories:
-  - Indian
-  - indpak
+  - Filipino
+  - filipino
   hours:
-  - 12:00 pm - 12:00 am
-  rating: 4.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Prosperity Dumpling
-  address: 46 Eldridge St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/JQUthGQdkpylKm0hpK81ig/ms.jpg
-  url: http://www.yelp.com/biz/prosperity-dumpling-new-york
-  categories:
-  - Chinese
-  - chinese
-  hours:
-  - 7:00 am - 10:30 pm
-  rating: 4.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Katz's Delicatessen
-  address: 205 E Houston St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/7TbxPf6pH-hN1rYN_mDs_Q/ms.jpg
-  url: http://www.yelp.com/biz/katzs-delicatessen-new-york
-  categories:
-  - Delis
-  - delis
-  hours:
-  - 6:00 am - 10:30 pm
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Cornerstone Cafe
-  address: 17 Ave B
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/wEvmGAF-gJK1vx2-ligDOQ/ms.jpg
-  url: http://www.yelp.com/biz/cornerstone-cafe-new-york
-  categories:
-  - Italian
-  - italian
-  hours:
-  - 8:00 am - 11:00 pm
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Taqueria Lower East Side
-  address: 198 Orchard St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/aF51IMVpKFBZHSwhYG9svA/ms.jpg
-  url: http://www.yelp.com/biz/taqueria-lower-east-side-new-york
-  categories:
-  - Mexican
-  - mexican
-  hours:
-  - 11:00 am - 12:00 am
-  rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: The Boil
-  address: 139 Chrystie St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/OxuEpY8k-YWMys1dWlL9SQ/ms.jpg
-  url: http://www.yelp.com/biz/the-boil-new-york-3
-  categories:
-  - Cajun/Creole
-  - cajun
-  hours:
-  - 4:00 pm - 11:00 pm
+  - 11:00 am - 4:00 pm5:00 pm - 11:00 pm
   rating: 4.0
   open_now: false
+- !ruby/object:YelpBiz
+  name: Thai Terminal
+  address: 349 E 12th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/sLUDM-Hdq4z4hFW127Exzw/ms.jpg
+  url: http://www.yelp.com/biz/thai-terminal-new-york-2
+  categories:
+  - Thai
+  - thai
+  hours:
+  - 12:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: true
 - !ruby/object:YelpBiz
   name: Supper
   address: 156 E 2nd St
@@ -167,41 +180,41 @@
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Cafe Cortadito
-  address: 210 E 3rd St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/QkhIqu3dhL69LzQ841vvpA/ms.jpg
-  url: http://www.yelp.com/biz/cafe-cortadito-new-york
-  categories:
-  - Cuban
-  - cuban
-  hours:
-  - 11:30 am - 10:00 pm
-  rating: 3.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: 'Wah Fung #1 Fast Food'
-  address: 79 Chrystie St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/-6V1evaYHK34OZeL6NSP_A/ms.jpg
-  url: http://www.yelp.com/biz/wah-fung-1-fast-food-new-york-2
-  categories:
-  - Chinese
-  - chinese
-  hours:
-  - 10:00 am - 6:00 pm
-  rating: 4.5
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Fonda
-  address: 40 Avenue B
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/cyAMyUEkSXrBqAuSKMe8wA/ms.jpg
-  url: http://www.yelp.com/biz/fonda-new-york
+  name: El Camion
+  address: 194 Ave A
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/FDpbAmdU4uGNudYZpYNQ2Q/ms.jpg
+  url: http://www.yelp.com/biz/el-camion-new-york
   categories:
   - Mexican
   - mexican
   hours:
-  - 11:00 am - 4:00 pm5:00 pm - 10:00 pm
+  - 10:30 am - 11:00 pm
   rating: 4.0
   open_now: true
+- !ruby/object:YelpBiz
+  name: Gena's Grill
+  address: 210 1st Ave
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/Ai5p6Q7IQ6C1_atQ8x34OA/ms.jpg
+  url: http://www.yelp.com/biz/genas-grill-new-york
+  categories:
+  - Dominican
+  - dominican
+  hours:
+  - 7:00 am - 11:00 pm
+  rating: 4.0
+  open_now: true
+- !ruby/object:YelpBiz
+  name: Northern Spy Food Co.
+  address: 511 E 12th St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/sj9yS4dvbuQty9_wI-YPDQ/ms.jpg
+  url: http://www.yelp.com/biz/northern-spy-food-co-new-york
+  categories:
+  - American (Traditional)
+  - tradamerican
+  hours:
+  - 10:00 am - 3:30 pm5:30 pm - 10:00 pm
+  rating: 4.0
+  open_now: false
 - !ruby/object:YelpBiz
   name: Cafe Himalaya
   address: 78 E 1st St
@@ -215,26 +228,14 @@
   rating: 4.0
   open_now: true
 - !ruby/object:YelpBiz
-  name: Public
-  address: 210 Elizabeth St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/_oAzMHqkbjE7fOIDsTCfoQ/ms.jpg
-  url: http://www.yelp.com/biz/public-new-york
+  name: Fonda
+  address: 40 Avenue B
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/cyAMyUEkSXrBqAuSKMe8wA/ms.jpg
+  url: http://www.yelp.com/biz/fonda-new-york
   categories:
-  - American (New)
-  - newamerican
+  - Mexican
+  - mexican
   hours:
-  - 10:30 am - 3:30 pm6:00 pm - 10:30 pm
+  - 11:00 am - 4:00 pm5:00 pm - 10:00 pm
   rating: 4.0
-  open_now: true
-- !ruby/object:YelpBiz
-  name: Shanghai Café
-  address: 100 Mott St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/NoG9jrNhOT02_ixXqS7Lag/ms.jpg
-  url: http://www.yelp.com/biz/shanghai-caf%C3%A9-new-york-2
-  categories:
-  - Shanghainese
-  - shanghainese
-  hours:
-  - 11:30 am - 10:00 pm
-  rating: 3.5
-  open_now: true
+  open_now: false
