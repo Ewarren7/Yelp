@@ -1,8 +1,8 @@
 require_relative 'environment'
 
 class YelpBiz
-  attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now, :lat, :lon 
-  attr_accessor :hours
+  attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now, :lat, :lon, :rating,:categories,:distance
+  attr_accessor :hours 
   HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
   @@all = []
   @@shuffled = []
@@ -84,7 +84,8 @@ class YelpBiz
 
   def self.is_open?(hours_from_yelp) #FINDS OUT IF A BUSINESS IS OPEN RETURNS BOOLEAN
     return true if hours_from_yelp[0] == "Open 24 hours"
-    return false if hours_from_yelp[0].length == 0 #account for ones without times listed
+
+    return false if hours_from_yelp.length == 0 #account for ones without times listed
     
     yelp_biz_hours = conv_biz_hrs(hours_from_yelp)
     
@@ -150,7 +151,7 @@ class YelpBiz
   end
 
   ########Instance Methods############
-  def initialize (name,address,image,url,categories,rating, hours)
+  def initialize (name,address,image,url,categories,rating, hours, distance)
     @name = name
     @address = address
     @image= image
@@ -159,6 +160,7 @@ class YelpBiz
     @hours = hours
     @rating = rating
     @open_now = self.class.is_open?(@hours)
+    @distance = distance
     @@all << self
   end
 
@@ -170,9 +172,5 @@ class YelpBiz
     self.class.conv_biz_hrs(@hours)
   end
 
-  
 
-
-
-
-end#class
+end

@@ -21,12 +21,13 @@ def make_bizs(dev = false)
     yelp_api_results.search_by_coordinates(YelpBiz.loc,params,locale).businesses.each_with_index do |value, index|
       name = value.name
       address = value.location.address.shift
-      image = value.image_url
+      image = value.image_url 
       url = value.url
       categories= value.categories[0]
       rating = value.rating
       hours = YelpBiz.get_hours(url,index)
-      YelpBiz.new(name,address,image,url,categories,rating,hours)
+      distance= (value.distance*0.00062137).round(2)
+      YelpBiz.new(name,address,image,url,categories,rating,hours,distance)
     end
 
     all_bizs = YelpBiz.all 
