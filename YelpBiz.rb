@@ -141,7 +141,7 @@ class YelpBiz
     #binding.pry
   end
 
-  def self.show_times #puts info to console to make sure tiem calcs working
+  def self.show_times #puts info to console to make sure time calcs working
     @@all.each do |biz|
       puts biz.name
       puts biz.hours

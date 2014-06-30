@@ -2,12 +2,25 @@
 
 <head>
   <title> GO here </title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 
   <body>
-      
-      You should go here <%= @random_biz.name %> <br>
-      <a href="/random"> Give me Something Else </a>
+    You should go here <%= @random_biz.name %><br>
+     <a href="/random"> Give me Something Else </a>
+    <div class="biz">
+    <div class="card">
+      <h1 style="text-align:center;" ><strong><a href="<%=@random_biz.url%>"><%=@random_biz.name%></a></strong></h1>  
+      <div class="map"><img src=<%=@random_biz.image%>></div>
+      <h2>Distance: <%= @random_biz.distance %> mile(s)</h2>
+      <h2>Rating: <%=@random_biz.rating %></h2>
+      <h2>Category: <%=@random_biz.categories.first %></h2>
+      <h2>Hours: <%=@random_biz.hours.first%></h2>
+      <h2>Address: <a href="https://www.google.com/maps/place/<%=@random_biz.name%>"><%=@random_biz.address%></a></h2>
+    </div>
+ 
+      <br>
+     
       
 
      
