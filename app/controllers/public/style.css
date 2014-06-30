@@ -11,11 +11,17 @@ table {width:90%;}
 img {width:100%;
     margin-left:auto;}
 
+
+
 .name {color:white; 
       font-size:40; 
       text-align:center;
       width:100%;
      }
+
+.biz{margin:auto;
+    width:95%;
+    margin-left: 55px}
 
 main {
   display:block;
@@ -49,58 +55,36 @@ input, .card {
   position:relative;
   z-index:2;
 }
-input {
-  display:block;
-  width:26rem;
-  margin:4.5rem 1rem 2rem;
-  border:0;
-  font-size:1.2rem;
-  padding:.75rem 1rem;
-  border-radius:3px;
-  box-shadow:0 1px 2px #aaa;
-  transition:.5s, margin-bottom .15s;
-}
 
-input:focus {
-  margin:0 1rem 1rem;
-  outline:0;
-}
+a:visited,a:hover,a:link{color:#539D00;}
 
-input:focus + header {
-  transform:translate3d(0,-10rem,0);
-  opacity:0;
-}
-table {margin:auto;}
+.card { -webkit-transition: 1s; }
+.begin { left: 0px; }
+.end { left: 500px; }
 
 .card {
+
+  height:600px;
+  margin:auto;
+  display:inline-block;
+  width: 17%;
   padding:1.5rem;
   box-shadow:0 1px 2px #aaa;
   background:white;
   margin:0 1rem 1rem;
-  border-radius:3px;
-  user-select:none;
-  animation:fly-in-from-left 25.5s 25s ease both;
-  transform-origin:top left;
-}
-.card:nth-child(even){
-  animation-name:fly-in-from-right;
-  animation-delay:500.1s;
- transform-origin:top right;
+  border-radius:3px;  
+    -webkit-animation: myfirst .5s 1s ease both; /* Chrome, Safari, Opera */
+
+  }
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes myfirst {
+    00%  {left:0px; top:600px;}
+    100% {left:0px; top:0px;}
 }
 
-@keyframes fly-in-from-left {
-  from {
-    transform:translateY(15rem) rotate(15deg);
-    opacity:0;
-  }
-}
 
-@keyframes fly-in-from-right {
-  from {
-    transform:translateY(15rem) rotate(-15deg);
-    opacity:0;
-  }
-}
 
 .card:after {
   position:absolute;
@@ -117,6 +101,10 @@ table {margin:auto;}
   pointer-events:none;
 }
 
+a:link{ text-decoration: none;
+
+}
+
 h1 {
   font-size:2rem;
   font-weight:200;
@@ -131,6 +119,7 @@ h2 {
   line-height:2.5;
   color:gray;
   font-weight:400;
+  border-bottom: 2px solid gray;
 }
 
 .map {
