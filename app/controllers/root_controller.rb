@@ -5,7 +5,7 @@ class RootController < ApplicationController
     @lon = params[:lon]
   
     YelpBiz.set_location(@lat, @lon)
-    make_bizs (true)
+    make_bizs ()
     @all_open = YelpBiz.all_open
  
     erb :index  

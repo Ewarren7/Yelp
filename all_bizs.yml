@@ -1,513 +1,261 @@
 ---
 - !ruby/object:YelpBiz
-  name: The GoGo Grill
-  address: Bowling Green Park
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/z_qsq_mTbN9PeMe62Fb7yg/ms.jpg
-  url: http://www.yelp.com/biz/the-gogo-grill-new-york
+  name: Caracas Arepa Bar
+  address: 93 1/2 E 7th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/M3QNmoYOYmfbX9tcTqr4ww/ms.jpg
+  url: http://www.yelp.com/biz/caracas-arepa-bar-new-york
   categories:
-  - Food Trucks
-  - foodtrucks
+  - Venezuelan
+  - venezuelan
   hours:
-  - 11:30 am - 3:00 pm
-  rating: 5.0
-  open_now: false
-  distance: 0.08
-- !ruby/object:YelpBiz
-  name: Sophie's Cuban Cuisine
-  address: 73 New St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/MZowS0PsRVmOyn6yksjeTQ/ms.jpg
-  url: http://www.yelp.com/biz/sophies-cuban-cuisine-new-york-8
-  categories:
-  - Cuban
-  - cuban
-  hours: []
+  - 12:00 pm - 11:00 pm
   rating: 4.0
   open_now: false
-  distance: 0.09
+  distance: 0.01
 - !ruby/object:YelpBiz
-  name: Fraunces Tavern
-  address: 54 Pearl St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/Mlr0OmnoiJCnamwDdlDd9A/ms.jpg
-  url: http://www.yelp.com/biz/fraunces-tavern-new-york-3
+  name: Kyo Ya
+  address: 94 E 7th St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/nvnk0aSAiPu8IwV8W3hx8g/ms.jpg
+  url: http://www.yelp.com/biz/kyo-ya-new-york
   categories:
-  - American (Traditional)
-  - tradamerican
+  - Japanese
+  - japanese
   hours:
-  - 11:30 am - 2:30 am
-  rating: 4.0
-  open_now: true
-  distance: 0.13
-- !ruby/object:YelpBiz
-  name: The Dead Rabbit
-  address: 30 Water St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/Z5B6SaD9yAXvZw4AhiFSBA/ms.jpg
-  url: http://www.yelp.com/biz/the-dead-rabbit-new-york
-  categories:
-  - Grocery
-  - grocery
-  hours:
-  - 11:00 am - 4:00 am
-  rating: 4.0
-  open_now: true
-  distance: 0.14
-- !ruby/object:YelpBiz
-  name: Gangnam
-  address: 3 Hanover Square
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/Ww9PvlWwR8R-ad_o82uwpQ/ms.jpg
-  url: http://www.yelp.com/biz/gangnam-new-york-2
-  categories:
-  - Korean
-  - korean
-  hours: []
-  rating: 4.0
+  - 5:30 pm - 11:30 pm
+  rating: 4.5
   open_now: false
-  distance: 0.19
+  distance: 0.02
 - !ruby/object:YelpBiz
-  name: Tajin
-  address: 85 Greenwich St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/72-vdb-22lKJewfq2J52XQ/ms.jpg
-  url: http://www.yelp.com/biz/tajin-new-york
+  name: Paprika
+  address: 110 St Marks Pl
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/nOJL1QkGZ2oovc6Xf4Ou3w/ms.jpg
+  url: http://www.yelp.com/biz/paprika-new-york
   categories:
-  - Mexican
-  - mexican
+  - Italian
+  - italian
   hours:
-  - 7:00 am - 9:00 pm
+  - 5:00 pm - 11:00 pm
   rating: 3.5
-  open_now: true
-  distance: 0.23
+  open_now: false
+  distance: 0.04
 - !ruby/object:YelpBiz
-  name: Blue Planet Grill
-  address: 120 Greenwich St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/QuqfCwKN03DTG2r9V7O8SA/ms.jpg
-  url: http://www.yelp.com/biz/blue-planet-grill-new-york
+  name: Cafe Mogador
+  address: 101 St Marks Pl
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/54HFP4h5CZWMSuSdy2jd2A/ms.jpg
+  url: http://www.yelp.com/biz/cafe-mogador-new-york
   categories:
-  - American (Traditional)
-  - tradamerican
+  - Moroccan
+  - moroccan
   hours:
-  - 12:00 pm - 10:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.31
+  - 9:00 am - 1:00 am
+  rating: 4.0
+  open_now: false
+  distance: 0.05
 - !ruby/object:YelpBiz
-  name: Pita Press
-  address: 25 Cedar St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/v4Qv47LKTBUcxi15vMRiEQ/ms.jpg
-  url: http://www.yelp.com/biz/pita-press-financial-district
+  name: Maharlika
+  address: 111 1st Ave
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/yiqiYnEA0s005lzcr790hQ/ms.jpg
+  url: http://www.yelp.com/biz/maharlika-new-york
+  categories:
+  - Filipino
+  - filipino
+  hours:
+  - 11:00 am - 3:30 pm5:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.06
+- !ruby/object:YelpBiz
+  name: Pylos
+  address: 128 E 7th St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/ipvbB3JuEQaIYXAEIyjnkw/ms.jpg
+  url: http://www.yelp.com/biz/pylos-new-york
   categories:
   - Greek
   - greek
   hours:
-  - 11:00 am - 10:30 pm
-  rating: 4.0
-  open_now: true
-  distance: 0.32
-- !ruby/object:YelpBiz
-  name: Veronica's Kitchen
-  address: Water Street between Pine and Wall St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/nzR1QINyFpZzhI1pVqQdTA/ms.jpg
-  url: http://www.yelp.com/biz/veronicas-kitchen-new-york
-  categories:
-  - Soul Food
-  - soulfood
-  hours:
-  - 10:00 am - 3:00 pm
-  rating: 4.0
-  open_now: false
-  distance: 0.32
-- !ruby/object:YelpBiz
-  name: Chipotle Mexican Grill
-  address: 100 Maiden Ln
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/udIMvXLKSXt4NIQRSgY5_g/ms.jpg
-  url: http://www.yelp.com/biz/chipotle-mexican-grill-new-york-32
-  categories:
-  - Fast Food
-  - hotdogs
-  hours: []
-  rating: 3.5
-  open_now: false
-  distance: 0.36
-- !ruby/object:YelpBiz
-  name: Ho Yip Restaurant
-  address: 110 Liberty St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/KcPrzhNK_EmL5FhSuAizNg/ms.jpg
-  url: http://www.yelp.com/biz/ho-yip-restaurant-new-york
-  categories:
-  - Chinese
-  - chinese
-  hours:
-  - 10:30 am - 8:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.37
-- !ruby/object:YelpBiz
-  name: Open Door Gastropub
-  address: 110 John St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/TpuLpu9SxqT9v8ilS0Ry8Q/ms.jpg
-  url: http://www.yelp.com/biz/open-door-gastropub-new-york
-  categories:
-  - Gastropubs
-  - gastropubs
-  hours:
-  - 11:00 am - 2:00 am
-  rating: 3.5
-  open_now: true
-  distance: 0.43
-- !ruby/object:YelpBiz
-  name: Taco Bite Food Truck
-  address: 
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/kbpeLiBLDcI8wOwIeNztrA/ms.jpg
-  url: http://www.yelp.com/biz/taco-bite-food-truck-new-york
-  categories:
-  - Mexican
-  - mexican
-  hours: []
-  rating: 4.0
-  open_now: false
-  distance: 0.45
-- !ruby/object:YelpBiz
-  name: GRK
-  address: 111 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/hKOn9oaXw_tThNOYdTu6xA/ms.jpg
-  url: http://www.yelp.com/biz/grk-new-york
-  categories:
-  - Ethnic Food
-  - ethnicmarkets
-  hours:
-  - 11:00 am - 10:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.49
-- !ruby/object:YelpBiz
-  name: Hudson Eats At Brookfield Place
-  address: 225 Liberty St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/VjLRUUfiiDXp7oUp3nnWrA/ms.jpg
-  url: http://www.yelp.com/biz/hudson-eats-at-brookfield-place-new-york
-  categories:
-  - Food Court
-  - food_court
-  hours:
-  - 7:00 am - 9:00 pm
+  - 5:00 pm - 12:00 am
   rating: 4.5
-  open_now: true
-  distance: 0.49
+  open_now: false
+  distance: 0.07
 - !ruby/object:YelpBiz
-  name: Alfanoose
-  address: 64 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/l4Y8x6yUFrGdyv3OBxi3eQ/ms.jpg
-  url: http://www.yelp.com/biz/alfanoose-new-york
+  name: Ugly Kitchen
+  address: 103 1st Ave
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/bdq3jyvUJKFn1aNsKYAIWA/ms.jpg
+  url: http://www.yelp.com/biz/ugly-kitchen-new-york
   categories:
-  - Lebanese
-  - lebanese
+  - Bars
+  - bars
   hours:
-  - 11:30 am - 9:30 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.5
-- !ruby/object:YelpBiz
-  name: Bennie's Thai Cafe
-  address: 88 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/gQtLiiY6fqzU66Z6ncLeMw/ms.jpg
-  url: http://www.yelp.com/biz/bennies-thai-cafe-new-york-2
-  categories:
-  - Thai
-  - thai
-  hours:
-  - 11:00 am - 9:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.51
-- !ruby/object:YelpBiz
-  name: Dark Horse
-  address: 17 Murray St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/EzfGcYObqx0k2PSTsp5nqQ/ms.jpg
-  url: http://www.yelp.com/biz/dark-horse-new-york
-  categories:
-  - American (Traditional)
-  - tradamerican
-  hours:
-  - 11:00 am - 1:00 am
+  - 5:00 pm - 12:00 am
   rating: 4.0
-  open_now: true
-  distance: 0.69
+  open_now: false
+  distance: 0.07
 - !ruby/object:YelpBiz
-  name: Benares
-  address: 45 Murray St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/ZFU5G1KM15mAzxOvoS1tEQ/ms.jpg
-  url: http://www.yelp.com/biz/benares-new-york-2
+  name: Yuca Bar & Restaurant
+  address: 111 Ave A
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/xozSkI2zo5iJDA4_7AKi6A/ms.jpg
+  url: http://www.yelp.com/biz/yuca-bar-and-restaurant-new-york
   categories:
-  - Indian
-  - indpak
+  - Latin American
+  - latin
   hours:
-  - 11:00 am - 10:30 pm
+  - 10:00 am - 1:00 am
   rating: 4.0
-  open_now: true
-  distance: 0.7
-- !ruby/object:YelpBiz
-  name: Cowgirl Sea Horse
-  address: 259 Front St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/kHTCqAIHXUOagiInnQ0P4g/ms.jpg
-  url: http://www.yelp.com/biz/cowgirl-sea-horse-new-york
-  categories:
-  - Tex-Mex
-  - tex-mex
-  hours:
-  - 11:00 am - 11:00 pm
-  rating: 4.0
-  open_now: true
-  distance: 0.71
-- !ruby/object:YelpBiz
-  name: The GoGo Grill
-  address: Bowling Green Park
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/z_qsq_mTbN9PeMe62Fb7yg/ms.jpg
-  url: http://www.yelp.com/biz/the-gogo-grill-new-york
-  categories:
-  - Food Trucks
-  - foodtrucks
-  hours:
-  - 11:30 am - 3:00 pm
-  rating: 5.0
   open_now: false
   distance: 0.08
 - !ruby/object:YelpBiz
-  name: Sophie's Cuban Cuisine
-  address: 73 New St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/MZowS0PsRVmOyn6yksjeTQ/ms.jpg
-  url: http://www.yelp.com/biz/sophies-cuban-cuisine-new-york-8
+  name: Pukk
+  address: 71 1st Ave
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/Xn3brODu_57zEMF5USUcNQ/ms.jpg
+  url: http://www.yelp.com/biz/pukk-new-york
   categories:
-  - Cuban
-  - cuban
-  hours: []
+  - Vegetarian
+  - vegetarian
+  hours:
+  - 11:30 am - 11:00 pm
   rating: 4.0
   open_now: false
-  distance: 0.09
-- !ruby/object:YelpBiz
-  name: Fraunces Tavern
-  address: 54 Pearl St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/Mlr0OmnoiJCnamwDdlDd9A/ms.jpg
-  url: http://www.yelp.com/biz/fraunces-tavern-new-york-3
-  categories:
-  - American (Traditional)
-  - tradamerican
-  hours:
-  - 11:30 am - 2:30 am
-  rating: 4.0
-  open_now: true
   distance: 0.13
 - !ruby/object:YelpBiz
-  name: The Dead Rabbit
-  address: 30 Water St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/Z5B6SaD9yAXvZw4AhiFSBA/ms.jpg
-  url: http://www.yelp.com/biz/the-dead-rabbit-new-york
+  name: Momofuku Ko
+  address: 163 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/_FDlAzS11dPkeUc66uI6EQ/ms.jpg
+  url: http://www.yelp.com/biz/momofuku-ko-new-york
   categories:
-  - Grocery
-  - grocery
+  - American (New)
+  - newamerican
   hours:
-  - 11:00 am - 4:00 am
-  rating: 4.0
-  open_now: true
-  distance: 0.14
-- !ruby/object:YelpBiz
-  name: Gangnam
-  address: 3 Hanover Square
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/Ww9PvlWwR8R-ad_o82uwpQ/ms.jpg
-  url: http://www.yelp.com/biz/gangnam-new-york-2
-  categories:
-  - Korean
-  - korean
-  hours: []
+  - 6:00 pm - 11:00 pm
   rating: 4.0
   open_now: false
+  distance: 0.16
+- !ruby/object:YelpBiz
+  name: Café Orlin
+  address: 41 St. Marks Pl
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/Wvd2qU6PSoTjHHtZ9Go0HA/ms.jpg
+  url: http://www.yelp.com/biz/caf%C3%A9-orlin-new-york-2
+  categories:
+  - Middle Eastern
+  - mideastern
+  hours:
+  - 9:00 am - 12:30 am
+  rating: 4.0
+  open_now: false
+  distance: 0.16
+- !ruby/object:YelpBiz
+  name: Nai Tapas Bar
+  address: 174 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/STyAj68kasZsAePRhO22zQ/ms.jpg
+  url: http://www.yelp.com/biz/nai-tapas-bar-new-york
+  categories:
+  - Tapas Bars
+  - tapas
+  hours:
+  - 5:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.18
+- !ruby/object:YelpBiz
+  name: Veselka
+  address: 144 2nd Ave
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/hZ49P5dz2n35GL0zXgAm5Q/ms.jpg
+  url: http://www.yelp.com/biz/veselka-new-york
+  categories:
+  - Diners
+  - diners
+  hours:
+  - Open 24 hours
+  rating: 3.5
+  open_now: true
   distance: 0.19
 - !ruby/object:YelpBiz
-  name: Tajin
-  address: 85 Greenwich St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/72-vdb-22lKJewfq2J52XQ/ms.jpg
-  url: http://www.yelp.com/biz/tajin-new-york
+  name: Jeepney
+  address: 201 1st Ave
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/reqeWyYWsbTsijocsUDkDg/ms.jpg
+  url: http://www.yelp.com/biz/jeepney-new-york
   categories:
-  - Mexican
-  - mexican
+  - Filipino
+  - filipino
   hours:
-  - 7:00 am - 9:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.23
-- !ruby/object:YelpBiz
-  name: Blue Planet Grill
-  address: 120 Greenwich St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/QuqfCwKN03DTG2r9V7O8SA/ms.jpg
-  url: http://www.yelp.com/biz/blue-planet-grill-new-york
-  categories:
-  - American (Traditional)
-  - tradamerican
-  hours:
-  - 12:00 pm - 10:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.31
-- !ruby/object:YelpBiz
-  name: Pita Press
-  address: 25 Cedar St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/v4Qv47LKTBUcxi15vMRiEQ/ms.jpg
-  url: http://www.yelp.com/biz/pita-press-financial-district
-  categories:
-  - Greek
-  - greek
-  hours:
-  - 11:00 am - 10:30 pm
-  rating: 4.0
-  open_now: true
-  distance: 0.32
-- !ruby/object:YelpBiz
-  name: Veronica's Kitchen
-  address: Water Street between Pine and Wall St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/nzR1QINyFpZzhI1pVqQdTA/ms.jpg
-  url: http://www.yelp.com/biz/veronicas-kitchen-new-york
-  categories:
-  - Soul Food
-  - soulfood
-  hours:
-  - 10:00 am - 3:00 pm
+  - 5:00 pm - 11:00 pm
   rating: 4.0
   open_now: false
-  distance: 0.32
+  distance: 0.26
 - !ruby/object:YelpBiz
-  name: Chipotle Mexican Grill
-  address: 100 Maiden Ln
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/udIMvXLKSXt4NIQRSgY5_g/ms.jpg
-  url: http://www.yelp.com/biz/chipotle-mexican-grill-new-york-32
-  categories:
-  - Fast Food
-  - hotdogs
-  hours: []
-  rating: 3.5
-  open_now: false
-  distance: 0.36
-- !ruby/object:YelpBiz
-  name: Ho Yip Restaurant
-  address: 110 Liberty St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/KcPrzhNK_EmL5FhSuAizNg/ms.jpg
-  url: http://www.yelp.com/biz/ho-yip-restaurant-new-york
-  categories:
-  - Chinese
-  - chinese
-  hours:
-  - 10:30 am - 8:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.37
-- !ruby/object:YelpBiz
-  name: Open Door Gastropub
-  address: 110 John St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/TpuLpu9SxqT9v8ilS0Ry8Q/ms.jpg
-  url: http://www.yelp.com/biz/open-door-gastropub-new-york
-  categories:
-  - Gastropubs
-  - gastropubs
-  hours:
-  - 11:00 am - 2:00 am
-  rating: 3.5
-  open_now: true
-  distance: 0.43
-- !ruby/object:YelpBiz
-  name: Taco Bite Food Truck
-  address: 
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/kbpeLiBLDcI8wOwIeNztrA/ms.jpg
-  url: http://www.yelp.com/biz/taco-bite-food-truck-new-york
-  categories:
-  - Mexican
-  - mexican
-  hours: []
-  rating: 4.0
-  open_now: false
-  distance: 0.45
-- !ruby/object:YelpBiz
-  name: GRK
-  address: 111 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/hKOn9oaXw_tThNOYdTu6xA/ms.jpg
-  url: http://www.yelp.com/biz/grk-new-york
-  categories:
-  - Ethnic Food
-  - ethnicmarkets
-  hours:
-  - 11:00 am - 10:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.49
-- !ruby/object:YelpBiz
-  name: Hudson Eats At Brookfield Place
-  address: 225 Liberty St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/VjLRUUfiiDXp7oUp3nnWrA/ms.jpg
-  url: http://www.yelp.com/biz/hudson-eats-at-brookfield-place-new-york
-  categories:
-  - Food Court
-  - food_court
-  hours:
-  - 7:00 am - 9:00 pm
-  rating: 4.5
-  open_now: true
-  distance: 0.49
-- !ruby/object:YelpBiz
-  name: Alfanoose
-  address: 64 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/l4Y8x6yUFrGdyv3OBxi3eQ/ms.jpg
-  url: http://www.yelp.com/biz/alfanoose-new-york
-  categories:
-  - Lebanese
-  - lebanese
-  hours:
-  - 11:30 am - 9:30 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.5
-- !ruby/object:YelpBiz
-  name: Bennie's Thai Cafe
-  address: 88 Fulton St
-  image: http://s3-media2.fl.yelpcdn.com/bphoto/gQtLiiY6fqzU66Z6ncLeMw/ms.jpg
-  url: http://www.yelp.com/biz/bennies-thai-cafe-new-york-2
+  name: Thai Terminal
+  address: 349 E 12th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/sLUDM-Hdq4z4hFW127Exzw/ms.jpg
+  url: http://www.yelp.com/biz/thai-terminal-new-york-2
   categories:
   - Thai
   - thai
   hours:
-  - 11:00 am - 9:00 pm
-  rating: 3.5
-  open_now: true
-  distance: 0.51
+  - 12:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.26
 - !ruby/object:YelpBiz
-  name: Dark Horse
-  address: 17 Murray St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/EzfGcYObqx0k2PSTsp5nqQ/ms.jpg
-  url: http://www.yelp.com/biz/dark-horse-new-york
+  name: Supper
+  address: 156 E 2nd St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/ZLEsT9yvCxxtBNPrlL5d-g/ms.jpg
+  url: http://www.yelp.com/biz/supper-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 5:00 pm - 12:00 am
+  rating: 4.0
+  open_now: false
+  distance: 0.26
+- !ruby/object:YelpBiz
+  name: Gena's Grill
+  address: 210 1st Ave
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/Ai5p6Q7IQ6C1_atQ8x34OA/ms.jpg
+  url: http://www.yelp.com/biz/genas-grill-new-york
+  categories:
+  - Dominican
+  - dominican
+  hours:
+  - 7:00 am - 11:00 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.27
+- !ruby/object:YelpBiz
+  name: Northern Spy Food Co.
+  address: 511 E 12th St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/sj9yS4dvbuQty9_wI-YPDQ/ms.jpg
+  url: http://www.yelp.com/biz/northern-spy-food-co-new-york
   categories:
   - American (Traditional)
   - tradamerican
   hours:
-  - 11:00 am - 1:00 am
+  - 10:00 am - 4:00 pm5:30 pm - 10:00 pm
   rating: 4.0
-  open_now: true
-  distance: 0.69
+  open_now: false
+  distance: 0.28
 - !ruby/object:YelpBiz
-  name: Benares
-  address: 45 Murray St
-  image: http://s3-media3.fl.yelpcdn.com/bphoto/ZFU5G1KM15mAzxOvoS1tEQ/ms.jpg
-  url: http://www.yelp.com/biz/benares-new-york-2
+  name: Cafe Himalaya
+  address: 78 E 1st St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/OOw6S4XdcaAyIvnVZ0GkAQ/ms.jpg
+  url: http://www.yelp.com/biz/cafe-himalaya-new-york-2
   categories:
-  - Indian
-  - indpak
+  - Asian Fusion
+  - asianfusion
   hours:
-  - 11:00 am - 10:30 pm
+  - 12:00 pm - 10:30 pm
   rating: 4.0
-  open_now: true
-  distance: 0.7
+  open_now: false
+  distance: 0.28
 - !ruby/object:YelpBiz
-  name: Cowgirl Sea Horse
-  address: 259 Front St
-  image: http://s3-media4.fl.yelpcdn.com/bphoto/kHTCqAIHXUOagiInnQ0P4g/ms.jpg
-  url: http://www.yelp.com/biz/cowgirl-sea-horse-new-york
+  name: Fonda
+  address: 40 Avenue B
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/cyAMyUEkSXrBqAuSKMe8wA/ms.jpg
+  url: http://www.yelp.com/biz/fonda-new-york
   categories:
-  - Tex-Mex
-  - tex-mex
+  - Mexican
+  - mexican
   hours:
-  - 11:00 am - 11:00 pm
+  - 5:00 pm - 10:30 pm
   rating: 4.0
-  open_now: true
-  distance: 0.71
+  open_now: false
+  distance: 0.29
