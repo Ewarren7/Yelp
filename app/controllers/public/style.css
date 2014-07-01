@@ -11,7 +11,9 @@ table {width:90%;}
 img {width:100%;
     margin-left:auto;}
 
+h2 {text-align:;left
 
+}
 
 .name {color:white; 
       font-size:40; 
@@ -21,7 +23,7 @@ img {width:100%;
 
 .biz{margin:auto;
     width:95%;
-    margin-left: 55px}
+    }
 
 main {
   display:block;
@@ -39,16 +41,6 @@ main {
 }
 body:hover main {
   transform:scale(1);
-}
-
-header {
-  position:absolute;
-  z-index:0;
-  top:0; left:0; right:0;
-  height:10rem;
-  transition:transform .5s, opacity .3s;
-  background:url(http://www.droid-life.com/wp-content/uploads/2013/01/googlenownewyork.png)  center center;
-  background-size:cover;
 }
 
 input, .card {
@@ -71,16 +63,16 @@ a:visited,a:hover,a:link{color:#539D00;}
   padding:1.5rem;
   box-shadow:0 1px 2px #aaa;
   background:white;
-  margin:0 1rem 1rem;
+  margin:1rem 1rem 1rem;
   border-radius:3px;  
-    -webkit-animation: myfirst .5s 1s ease both; /* Chrome, Safari, Opera */
+   -webkit-animation: myfirst .3s 1s ease both; /* Chrome, Safari, Opera */
 
   }
 
 
 /* Chrome, Safari, Opera */ 
 @-webkit-keyframes myfirst {
-    00%  {left:0px; top:800px;}
+    00%  {left:0px; top:1200px;}
     100% {left:0px; top:0px;}
 }
 
