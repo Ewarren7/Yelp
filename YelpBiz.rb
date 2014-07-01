@@ -79,6 +79,7 @@ class YelpBiz
     c_am = c_times[5] == "am"
     
     yelp_biz_hours = {o_hour: o_hour, o_min: o_min, o_am: o_am, c_hour: c_hour, c_min: c_min, c_am: c_am}
+    
     conv_to_mil_time (yelp_biz_hours) ##returns ohour and c hour in mil time. am and pm still included in hash
    end
 
@@ -103,21 +104,22 @@ class YelpBiz
       close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])      
     end
     
+    puts "close time object: #{close_time}"
     return false if time_now < open_time #returns true or false that biz hasn't opened yet
     return time_now < close_time #returns true or false that current time is before biz closing time
   end
 
   def self.conv_to_mil_time (yhours)
-    #if open during pm, add 12 hours to ohour
+    #if open during pm, add 12 hours to ohour, unless its noon
     if !yhours[:o_am] 
       yhours[:o_hour] = yhours[:o_hour] += 12 unless yhours[:o_hour] == 12 
     end
       
-    #if close during pm, add 12 to chour
-    yhours[:c_hour] = yhours[:c_hour] += 12 if !yhours[:c_am]
+    #if close during pm, add 12 to chour (unless its 12 noon)
+    yhours[:c_hour] = yhours[:c_hour] += 12 if !yhours[:c_am] unless yhours[:c_hour] == 12 
       
-    #if closes at midnight, make chour 24
-    yhours[:c_hour] = 24 if yhours[:c_am] && yhours[:c_hour] == 12 && yhours[:c_min] == 0
+    #if closes at midnight, make chour 00
+    yhours[:c_hour] = 00 if yhours[:c_am] && yhours[:c_hour] == 12 
       
     return yhours
   end
@@ -142,7 +144,8 @@ class YelpBiz
   end
 
   def self.show_times #puts info to console to make sure time calcs working
-    @@all.each do |biz|
+   open= @@all.select { |biz| biz.open_now}
+    open.each do |biz|
       puts biz.name
       puts biz.hours
       puts biz.get_biz_hours_array 
