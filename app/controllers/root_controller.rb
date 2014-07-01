@@ -7,6 +7,7 @@ class RootController < ApplicationController
     YelpBiz.set_location(@lat, @lon)
     make_bizs (true)
     @all_open = YelpBiz.all_open
+    binding.pry
     erb :index  
 
   end
