@@ -4,11 +4,9 @@ require_relative 'YelpBiz'
 
 
 def make_bizs(dev = false)
-  if dev 
+  if dev #load results from file
     all_bizs = YAML.load(File.read('./all_bizs.yml'))
-    #all_bizs = all_bizsO.select {|biz| biz.name == "Gaia Italian Café"} #for testing biz with 2 closing times
     all_bizs.each {|biz| biz.recheck_open}
-    
     YelpBiz.all= (all_bizs)
   
   else

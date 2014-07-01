@@ -76,7 +76,7 @@
   - 5:00 pm - 12:00 am
   rating: 4.5
   open_now: false
-  distance: 0.07
+  distance: 0.06
 - !ruby/object:YelpBiz
   name: Ugly Kitchen
   address: 103 1st Ave
@@ -218,21 +218,8 @@
   hours:
   - 7:00 am - 11:00 pm
   rating: 4.0
-  open_now: false
+  open_now: true
   distance: 0.27
-- !ruby/object:YelpBiz
-  name: Northern Spy Food Co.
-  address: 511 E 12th St
-  image: http://s3-media1.fl.yelpcdn.com/bphoto/sj9yS4dvbuQty9_wI-YPDQ/ms.jpg
-  url: http://www.yelp.com/biz/northern-spy-food-co-new-york
-  categories:
-  - American (Traditional)
-  - tradamerican
-  hours:
-  - 10:00 am - 4:00 pm5:30 pm - 10:00 pm
-  rating: 4.0
-  open_now: false
-  distance: 0.28
 - !ruby/object:YelpBiz
   name: Cafe Himalaya
   address: 78 E 1st St
@@ -243,6 +230,19 @@
   - asianfusion
   hours:
   - 12:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.28
+- !ruby/object:YelpBiz
+  name: Northern Spy Food Co.
+  address: 511 E 12th St
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/sj9yS4dvbuQty9_wI-YPDQ/ms.jpg
+  url: http://www.yelp.com/biz/northern-spy-food-co-new-york
+  categories:
+  - American (Traditional)
+  - tradamerican
+  hours:
+  - 10:00 am - 4:00 pm5:30 pm - 10:00 pm
   rating: 4.0
   open_now: false
   distance: 0.28

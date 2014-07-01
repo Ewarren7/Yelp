@@ -4,9 +4,9 @@ class YelpBiz
   attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now, :lat, :lon, :rating,:categories,:distance
   attr_accessor :hours 
   HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
+ 
   @@all = []
   @@shuffled = []
-  
   @@i = -1 #counter var for random restaurant method
  
   ####Class Var Readers & Writers#######
@@ -20,7 +20,7 @@ class YelpBiz
     @@all = all_yaml
   end
 
-  ######Class Methods########
+  ######Class Methods#############################
   def self.get_api_key
     path="../yelp_api_key.txt"
     api_keys = {}
@@ -34,13 +34,12 @@ class YelpBiz
   end
 
   def self.set_location (lat,lon)
-    if lat=="" || lon =="" #if html5 location isnt passed, revert to this method
+    if lat.nil?|| lon.nil? #if html5 location isnt passed, revert to this method
       page = "http://freegeoip.net/json/"
       doc = Nokogiri::HTML(open(page, 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36'))
       loc = /(latitude)(\":)(\d+.\d+)(,\"longitude\":)(-\d+.\d+)/.match(doc.text)
       @lat = loc[3]
       @lon = loc[5]
-      binding.pry
     else
       @lat = lat
       @lon = lon
@@ -50,11 +49,13 @@ class YelpBiz
   end
 
   def self.loc
+    #return hash in format used by Yelp API
     return {latitude: @lat, longitude: @lon}
   end
 
 
   def self.get_hours(url, index)
+    #scrape for hours, return array with hours string
     puts "Found #{index +1} fooderies, getting hours"
     parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
     parse.search("span.hour-range").collect {|name| name.text}
@@ -67,8 +68,6 @@ class YelpBiz
     
   
     times = time.first.to_s.split(" - ")
-    puts time
-    puts times
     o_times= /(\d+)(:)(\d+)( )([a-z]+)/.match(times[0])
     c_times= /(\d+)(:)(\d+)( )([a-z]+)/.match(times[1])
     o_hour= o_times[1].to_i
@@ -96,15 +95,12 @@ class YelpBiz
     open_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:o_hour],yelp_biz_hours[:o_min])
     
     #account for biz closing next day early AM by adding 1 day to time object if close hour is AM
-    if yelp_biz_hours[:c_am]
-      puts hours_from_yelp
-      puts yelp_biz_hours
+    if yelp_biz_hours[:c_am] && !yelp_biz_hours[:o_am]  #closes during AM and opened during pm
       close_time = Time.new(time_now.year,time_now.month,time_now.day + 1,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])
     else !yelp_biz_hours[:c_am]
       close_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:c_hour],yelp_biz_hours[:c_min])      
     end
     
-    puts "close time object: #{close_time}"
     return false if time_now < open_time #returns true or false that biz hasn't opened yet
     return time_now < close_time #returns true or false that current time is before biz closing time
   end
@@ -134,15 +130,14 @@ class YelpBiz
 
   def self.suffle_open
 
-    #binding.pry
     @@random_open ||= YelpBiz.all_open.shuffle
     @@i + 1 == @@random_open.length ? @@i = 0 : @@i+=1
     @@random_open.each {|place| puts place.name}
     @@random_open[@@i]
 
-    #binding.pry
   end
 
+  #####debug class method
   def self.show_times #puts info to console to make sure time calcs working
    open= @@all.select { |biz| biz.open_now}
     open.each do |biz|
@@ -166,7 +161,7 @@ class YelpBiz
     @distance = distance
     @@all << self
   end
-
+#### degubbing heper methods
   def recheck_open
     @open_now = self.class.is_open?(@hours)
   end
