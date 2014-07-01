@@ -80,7 +80,7 @@ a:visited,a:hover,a:link{color:#539D00;}
 
 /* Chrome, Safari, Opera */ 
 @-webkit-keyframes myfirst {
-    00%  {left:0px; top:600px;}
+    00%  {left:0px; top:800px;}
     100% {left:0px; top:0px;}
 }
 

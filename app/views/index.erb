@@ -8,8 +8,7 @@
 
 <body>
   <br>
-  <div class="name" style ="font-size:400; color:red;" ><h3> Welcome to still_open?</h3> </div>
-  <br>
+  
   <br>
 <div class="biz">
   <%@all_open.each do |biz| %>
@@ -24,6 +23,15 @@
   <h2>Address: <a href="https://www.google.com/maps/place/<%=biz.name%>"><%=biz.address%></a></h2>
 </div>
   <%end%>
+  <div>
+  <div style="margin:auto; width:100%; color:white; font-size:400%">
+  <p style="text-align:center;">Cant decide?</p>
+  
+<button  style="    
+    margin-left:29%;
+   font-size:125%; bbackground-color:white;" > <a href="/random">RANDOMIZE! </button>
+<div>
+  <br>
 </body>
 
 </html>

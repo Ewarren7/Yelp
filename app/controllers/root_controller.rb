@@ -8,7 +8,6 @@ class RootController < ApplicationController
     make_bizs (true)
     @all_open = YelpBiz.all_open
     erb :index  
-
   end
 
   get '/' do
