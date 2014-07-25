@@ -86,7 +86,7 @@
   hours:
   - 12:00 pm - 11:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.22
 - !ruby/object:YelpBiz
   name: Blue Planet Grill
@@ -99,7 +99,7 @@
   hours:
   - 12:00 pm - 10:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.27
 - !ruby/object:YelpBiz
   name: Pita Press
@@ -112,7 +112,7 @@
   hours:
   - 11:00 am - 10:30 pm
   rating: 4.0
-  open_now: false
+  open_now: true
   distance: 0.31
 - !ruby/object:YelpBiz
   name: Veronica's Kitchen
@@ -138,7 +138,7 @@
   hours:
   - 10:30 am - 8:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.33
 - !ruby/object:YelpBiz
   name: Chipotle Mexican Grill
@@ -189,7 +189,7 @@
   hours:
   - 11:00 am - 10:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.46
 - !ruby/object:YelpBiz
   name: Taco Bite Food Truck
@@ -214,7 +214,7 @@
   hours:
   - 11:30 am - 9:30 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.48
 - !ruby/object:YelpBiz
   name: Dark Horse
@@ -228,7 +228,7 @@
   - 11:00 am - 1:00 am
   rating: 4.0
   open_now: false
-  distance: 0.66
+  distance: 0.65
 - !ruby/object:YelpBiz
   name: Benares
   address: 45 Murray St
@@ -240,7 +240,7 @@
   hours:
   - 11:00 am - 10:30 pm
   rating: 4.0
-  open_now: false
+  open_now: true
   distance: 0.66
 - !ruby/object:YelpBiz
   name: Cowgirl Sea Horse
@@ -253,7 +253,7 @@
   hours:
   - 11:00 am - 11:00 pm
   rating: 4.0
-  open_now: false
+  open_now: true
   distance: 0.7
 - !ruby/object:YelpBiz
   name: Sophie's Cuban Cuisine
@@ -266,7 +266,7 @@
   hours: []
   rating: 4.0
   open_now: false
-  distance: 0.06
+  distance: 0.05
 - !ruby/object:YelpBiz
   name: The GoGo Grill
   address: Bowling Green Park
@@ -342,7 +342,7 @@
   hours:
   - 12:00 pm - 11:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.22
 - !ruby/object:YelpBiz
   name: Blue Planet Grill
@@ -355,7 +355,7 @@
   hours:
   - 12:00 pm - 10:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.27
 - !ruby/object:YelpBiz
   name: Pita Press
@@ -368,8 +368,8 @@
   hours:
   - 11:00 am - 10:30 pm
   rating: 4.0
-  open_now: false
-  distance: 0.31
+  open_now: true
+  distance: 0.3
 - !ruby/object:YelpBiz
   name: Veronica's Kitchen
   address: Water Street between Pine and Wall St
@@ -394,7 +394,7 @@
   hours:
   - 10:30 am - 8:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.33
 - !ruby/object:YelpBiz
   name: Chipotle Mexican Grill
@@ -445,7 +445,7 @@
   hours:
   - 11:00 am - 10:00 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.46
 - !ruby/object:YelpBiz
   name: Taco Bite Food Truck
@@ -470,7 +470,7 @@
   hours:
   - 11:30 am - 9:30 pm
   rating: 3.5
-  open_now: false
+  open_now: true
   distance: 0.48
 - !ruby/object:YelpBiz
   name: Dark Horse
@@ -484,7 +484,7 @@
   - 11:00 am - 1:00 am
   rating: 4.0
   open_now: false
-  distance: 0.66
+  distance: 0.65
 - !ruby/object:YelpBiz
   name: Benares
   address: 45 Murray St
@@ -496,7 +496,7 @@
   hours:
   - 11:00 am - 10:30 pm
   rating: 4.0
-  open_now: false
+  open_now: true
   distance: 0.66
 - !ruby/object:YelpBiz
   name: Cowgirl Sea Horse
@@ -509,5 +509,5 @@
   hours:
   - 11:00 am - 11:00 pm
   rating: 4.0
-  open_now: false
+  open_now: true
   distance: 0.7
