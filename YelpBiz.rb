@@ -22,7 +22,7 @@ class YelpBiz
 
   ######Class Methods#############################
   def self.get_api_key
-    path="yelp_api_key.txt"
+    path="./yelp_api_key.txt"
     api_keys = {}
     File.open(path) do |fp|
       fp.each do |line|
@@ -34,6 +34,7 @@ class YelpBiz
   end
 
   def self.set_location (lat,lon)
+    sleep(1)
     if lat.nil?|| lon.nil? #if html5 location isnt passed, revert to this method
       page = "http://freegeoip.net/json/"
       doc = Nokogiri::HTML(open(page, 'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36'))
