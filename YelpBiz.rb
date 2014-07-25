@@ -22,7 +22,7 @@ class YelpBiz
 
   ######Class Methods#############################
   def self.get_api_key
-    path="../yelp_api_key.txt"
+    path="yelp_api_key.txt"
     api_keys = {}
     File.open(path) do |fp|
       fp.each do |line|
