@@ -61,7 +61,6 @@ def make_bizs(dev = false)
 
      search4 = Thread.new {
       yelp_api_results.search_by_coordinates(YelpBiz.loc,params,locale).businesses[6..7].each_with_index do |value, index|
->>>>>>> 155f6c0ba86b25a0974ee6c41c3d659042dbd95e
       name = value.name
       address = value.location.address.shift
       image = value.image_url 
