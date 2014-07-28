@@ -1,6 +1,6 @@
 require 'bundler/setup'
 Bundler.require
-
+require'pry'
 require 'open-uri'
 
 Dir[File.join(File.dirname(__FILE__), "./app/controllers", "*.rb")].each {|f| require f}
