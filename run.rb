@@ -179,8 +179,8 @@ def make_bizs(dev = false)
     search10.join
 
 
-    all_bizs = YelpBiz.all 
-    File.open('./all_bizs.yml', 'w') {|f| f.write(YAML.dump(all_bizs)) } 
+    # all_bizs = YelpBiz.all 
+    # File.open('./all_bizs.yml', 'w') {|f| f.write(YAML.dump(all_bizs)) } 
     
   end
 end
