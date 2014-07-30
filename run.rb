@@ -5,7 +5,7 @@ require_relative 'YelpBiz'
 
 def make_bizs(dev = false)
   if dev #load results from file
-    all_bizs = YAML.load(File.read('./all_bizs.yml'))
+    #all_bizs = YAML.load(File.read('./all_bizs.yml'))
     all_bizs.each {|biz| biz.recheck_open}
     YelpBiz.all= (all_bizs)
   
@@ -154,18 +154,7 @@ def make_bizs(dev = false)
     end
     }
     
-    # yelp_api_results.search_by_coordinates(YelpBiz.loc,params,locale).businesses.each_with_index do |value, index|
-     
-    #   name = value.name
-    #   address = value.location.address.shift
-    #   image = value.image_url 
-    #   url = value.url
-    #   categories= value.categories[0]
-    #   rating = value.rating
-    #   hours = YelpBiz.get_hours(url,index)
-    #   distance= (value.distance*0.00062137).round(2)
-    #   YelpBiz.new(name,address,image,url,categories,rating,hours,distance)
-    # end
+  
 
     search1.join
     search2.join

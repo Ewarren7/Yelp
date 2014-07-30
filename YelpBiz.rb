@@ -23,13 +23,18 @@ class YelpBiz
   ######Class Methods#############################
   def self.get_api_key
     path="./yelp_api_key.txt"
-    api_keys = {}
-    File.open(path) do |fp|
-      fp.each do |line|
-        key, value = line.chomp.split(" ")
-        api_keys[key.to_sym] = value
-      end
-    end
+    api_keys = {
+      :consumer_key => "rafKiIALsdfrzJApEFRKAQ",
+      :consumer_secret => "KwwBZUvezUTV8az3j-6EYSW2YNg",
+      :token => "JP3tJKYEbNeFNO_J7MlIRzIdWtlodlX-",
+      :token_secret => "LlIJAA1JY1rHuYhfdPqq5xbz1FQ"}
+    
+    # File.open(path) do |fp|
+    #   fp.each do |line|
+    #     key, value = line.chomp.split(" ")
+    #     api_keys[key.to_sym] = value
+    #   end
+    # end
      @@api_keys = api_keys
   end
 
