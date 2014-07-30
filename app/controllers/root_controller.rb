@@ -1,6 +1,6 @@
 class RootController < ApplicationController
   
-  post '/go' do
+  # post '/go' do
   #   @lat = params[:lat]
   #   @lon = params[:lon]
   
