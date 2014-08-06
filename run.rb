@@ -4,12 +4,12 @@ require_relative 'YelpBiz'
 
 
 def make_bizs(dev = false)
-  if dev #load results from file
-    #all_bizs = YAML.load(File.read('./all_bizs.yml'))
-    all_bizs.each {|biz| biz.recheck_open}
-    YelpBiz.all= (all_bizs)
+  # if dev #load results from file
+  #   #all_bizs = YAML.load(File.read('./all_bizs.yml'))
+  #   all_bizs.each {|biz| biz.recheck_open}
+  #   YelpBiz.all= (all_bizs)
   
-  else
+  # else
     #set variables need for yelp gem
     params = {term: 'food',limit: 20, sort: 1}
     locale = {lang: 'eng'}
@@ -171,6 +171,6 @@ def make_bizs(dev = false)
     # all_bizs = YelpBiz.all 
     # File.open('./all_bizs.yml', 'w') {|f| f.write(YAML.dump(all_bizs)) } 
     
-  end
+  
 end
 
