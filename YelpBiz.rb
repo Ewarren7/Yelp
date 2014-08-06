@@ -63,6 +63,7 @@ class YelpBiz
   def self.get_hours(url, index)
     #scrape for hours, return array with hours string
     # puts "Found #{index +1} fooderies, getting hours"
+    puts url
     parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
     puts "Got #{index}"
     parse.search("span.hour-range").collect {|name| name.text}

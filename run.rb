@@ -11,7 +11,7 @@ def make_bizs(dev = false)
   
   # else
     #set variables need for yelp gem
-    params = {term: 'food',limit: 20, sort: 1}
+    params = {term: 'food',limit: 10, sort: 1}
     locale = {lang: 'eng'}
     yelp_api_results = Yelp::Client.new(YelpBiz.get_api_key)
 
