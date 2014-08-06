@@ -3,7 +3,7 @@ require_relative 'environment'
 class YelpBiz
   attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now, :lat, :lon, :rating,:categories,:distance
   attr_accessor :hours 
-  HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
+  HEADERS_HASH = {"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"}
  
   @@all = []
   @@shuffled = []
