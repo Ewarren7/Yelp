@@ -26,7 +26,7 @@ def make_bizs(dev = false)
       distance= (value.distance*0.00062137).round(2)
       YelpBiz.new(name,address,image,url,categories,rating,hours,distance)
     end
-
+    puts "make biz done"
     all_bizs = YelpBiz.all
 end
 
