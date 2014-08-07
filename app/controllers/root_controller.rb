@@ -6,8 +6,8 @@ class RootController < ApplicationController
     puts "#{@lat}, #{@lon}"
     YelpBiz.set_location(@lat, @lon)
     make_bizs
-    puts "all_open length = #{YelpBiz.all_open.length}"
-    @all_open = YelpBiz.all_open
+    puts "all_open length = #{YelpBiz.all_open.uniq.length}"
+    @all_open = YelpBiz.all_open.uniq
  
     erb :index  
   end
