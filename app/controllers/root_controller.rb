@@ -5,7 +5,7 @@ class RootController < ApplicationController
     @lon = params[:lon]
     puts "#{@lat}, #{@lon}"
     YelpBiz.set_location(@lat, @lon)
-    make_bizs
+    make_bizs(true)
     puts "all_open length = #{YelpBiz.all_open.length}"
     @all_open = YelpBiz.all_open
  
