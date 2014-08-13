@@ -1,5 +1,6 @@
 ---
 - !ruby/object:YelpBiz
+<<<<<<< HEAD
   name: Fresh Salt
   address: 146 Beekman St
   image: http://s3-media1.fl.yelpcdn.com/bphoto/O6unEDzDgRTAY7swMZhajw/ms.jpg
@@ -81,10 +82,56 @@
   address: 100 Maiden Ln
   image: http://s3-media3.fl.yelpcdn.com/bphoto/HagjCcSQ6oLWJhGNm-IKbg/ms.jpg
   url: http://www.yelp.com/biz/terri-new-york-4
+=======
+  name: Supper
+  address: 156 E 2nd St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/_aFjjkS-3VqTlcduu6lKIw/ms.jpg
+  url: http://www.yelp.com/biz/supper-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 5:00 pm - 12:00 am
+  rating: 4.0
+  open_now: true
+  distance: 0.26
+- !ruby/object:YelpBiz
+  name: Paprika
+  address: 110 St Marks Pl
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/nOJL1QkGZ2oovc6Xf4Ou3w/ms.jpg
+  url: http://www.yelp.com/biz/paprika-new-york
+  categories:
+  - Italian
+  - italian
+  hours:
+  - 5:00 pm - 11:00 pm
+  rating: 3.5
+  open_now: true
+  distance: 0.04
+- !ruby/object:YelpBiz
+  name: Maharlika
+  address: 111 1st Ave
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/yiqiYnEA0s005lzcr790hQ/ms.jpg
+  url: http://www.yelp.com/biz/maharlika-new-york
+  categories:
+  - Filipino
+  - filipino
+  hours:
+  - 11:00 am - 3:30 pm5:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.06
+- !ruby/object:YelpBiz
+  name: Momofuku Ko
+  address: 163 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/_FDlAzS11dPkeUc66uI6EQ/ms.jpg
+  url: http://www.yelp.com/biz/momofuku-ko-new-york
+>>>>>>> 5c439553b6201a1623f0da1f311896abb1cb122d
   categories:
   - American (New)
   - newamerican
   hours:
+<<<<<<< HEAD
   - 7:00 am - 10:00 pm
   rating: 4.0
   open_now: true
@@ -185,10 +232,74 @@
   address: 170 John St
   image: http://s3-media1.fl.yelpcdn.com/bphoto/zcBmTYnddLc98ZIRo9aDzA/ms.jpg
   url: http://www.yelp.com/biz/trading-post-new-york
+=======
+  - 6:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.16
+- !ruby/object:YelpBiz
+  name: El Camion
+  address: 194 Ave A
+  image: http://s3-media1.fl.yelpcdn.com/bphoto/FDpbAmdU4uGNudYZpYNQ2Q/ms.jpg
+  url: http://www.yelp.com/biz/el-camion-new-york
+  categories:
+  - Mexican
+  - mexican
+  hours:
+  - 11:30 am - 11:00 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.26
+- !ruby/object:YelpBiz
+  name: Nai Tapas Bar
+  address: 174 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/STyAj68kasZsAePRhO22zQ/ms.jpg
+  url: http://www.yelp.com/biz/nai-tapas-bar-new-york
+  categories:
+  - Tapas Bars
+  - tapas
+  hours:
+  - 5:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.18
+- !ruby/object:YelpBiz
+  name: Northern Spy Food Co.
+  address: 511 E 12th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/vumKqLYEf0sE51eiBStqkA/ms.jpg
+  url: http://www.yelp.com/biz/northern-spy-food-co-new-york
+  categories:
+  - American (Traditional)
+  - tradamerican
+  hours:
+  - 10:00 am - 4:00 pm5:30 pm - 10:00 pm
+  rating: 4.0
+  open_now: false
+  distance: 0.28
+- !ruby/object:YelpBiz
+  name: Yakitori Taisho
+  address: 5 St Marks Pl
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/B189uk2BDkbFLxA9kVkMJw/ms.jpg
+  url: http://www.yelp.com/biz/yakitori-taisho-new-york
+  categories:
+  - Japanese
+  - japanese
+  hours:
+  - 6:00 pm - 2:00 am
+  rating: 4.0
+  open_now: true
+  distance: 0.3
+- !ruby/object:YelpBiz
+  name: Ugly Kitchen
+  address: 103 1st Ave
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/bdq3jyvUJKFn1aNsKYAIWA/ms.jpg
+  url: http://www.yelp.com/biz/ugly-kitchen-new-york
+>>>>>>> 5c439553b6201a1623f0da1f311896abb1cb122d
   categories:
   - Bars
   - bars
   hours:
+<<<<<<< HEAD
   - 11:00 am - 1:00 am
   rating: 4.0
   open_now: false
@@ -402,10 +513,99 @@
   address: 110 Liberty St
   image: http://s3-media4.fl.yelpcdn.com/bphoto/z1dikCK5NnrZxYrdHHCmGw/ms.jpg
   url: http://www.yelp.com/biz/ho-yip-restaurant-new-york
+=======
+  - 5:00 pm - 12:00 am
+  rating: 4.0
+  open_now: true
+  distance: 0.07
+- !ruby/object:YelpBiz
+  name: Caracas Arepa Bar
+  address: 93 1/2 E 7th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/M3QNmoYOYmfbX9tcTqr4ww/ms.jpg
+  url: http://www.yelp.com/biz/caracas-arepa-bar-new-york
+  categories:
+  - Venezuelan
+  - venezuelan
+  hours:
+  - 12:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.02
+- !ruby/object:YelpBiz
+  name: Thai Terminal
+  address: 349 E 12th St
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/sLUDM-Hdq4z4hFW127Exzw/ms.jpg
+  url: http://www.yelp.com/biz/thai-terminal-new-york-2
+  categories:
+  - Thai
+  - thai
+  hours:
+  - 12:00 pm - 10:30 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.26
+- !ruby/object:YelpBiz
+  name: Yuca Bar & Restaurant
+  address: 111 Ave A
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/xozSkI2zo5iJDA4_7AKi6A/ms.jpg
+  url: http://www.yelp.com/biz/yuca-bar-and-restaurant-new-york
+  categories:
+  - Latin American
+  - latin
+  hours:
+  - 10:00 am - 1:00 am
+  rating: 4.0
+  open_now: false
+  distance: 0.07
+- !ruby/object:YelpBiz
+  name: Cafe Himalaya
+  address: 78 E 1st St
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/OOw6S4XdcaAyIvnVZ0GkAQ/ms.jpg
+  url: http://www.yelp.com/biz/cafe-himalaya-new-york-2
+  categories:
+  - Asian Fusion
+  - asianfusion
+  hours: []
+  rating: 4.0
+  open_now: false
+  distance: 0.28
+- !ruby/object:YelpBiz
+  name: Café Orlin
+  address: 41 St. Marks Pl
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/Wvd2qU6PSoTjHHtZ9Go0HA/ms.jpg
+  url: http://www.yelp.com/biz/caf%C3%A9-orlin-new-york-2
+  categories:
+  - Middle Eastern
+  - mideastern
+  hours:
+  - 9:00 am - 12:30 am
+  rating: 4.0
+  open_now: false
+  distance: 0.17
+- !ruby/object:YelpBiz
+  name: Cafe Mogador
+  address: 101 St Marks Pl
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/4jPAon2sI2rgUSzsQNTZyA/ms.jpg
+  url: http://www.yelp.com/biz/cafe-mogador-new-york
+  categories:
+  - Moroccan
+  - moroccan
+  hours:
+  - 9:00 am - 1:00 am
+  rating: 4.0
+  open_now: false
+  distance: 0.05
+- !ruby/object:YelpBiz
+  name: Xi'an Famous Foods
+  address: 81 St Marks Pl
+  image: http://s3-media2.fl.yelpcdn.com/bphoto/jZch-3tVwvM8sIXnNkDOGQ/ms.jpg
+  url: http://www.yelp.com/biz/xian-famous-foods-new-york-3
+>>>>>>> 5c439553b6201a1623f0da1f311896abb1cb122d
   categories:
   - Chinese
   - chinese
   hours:
+<<<<<<< HEAD
   - 10:30 am - 8:00 pm
   rating: 3.5
   open_now: true
@@ -479,10 +679,35 @@
   address: 170 John St
   image: http://s3-media1.fl.yelpcdn.com/bphoto/zcBmTYnddLc98ZIRo9aDzA/ms.jpg
   url: http://www.yelp.com/biz/trading-post-new-york
+=======
+  - 11:30 am - 9:30 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.09
+- !ruby/object:YelpBiz
+  name: Jeepney
+  address: 201 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/6PIpw_I4N12CfQfIz5aP0w/ms.jpg
+  url: http://www.yelp.com/biz/jeepney-new-york
+  categories:
+  - Filipino
+  - filipino
+  hours:
+  - 5:00 pm - 11:00 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.26
+- !ruby/object:YelpBiz
+  name: Fat Buddha
+  address: 212 Ave A
+  image: http://s3-media3.fl.yelpcdn.com/bphoto/2vLo-15XV9oZIZac76ggKg/ms.jpg
+  url: http://www.yelp.com/biz/fat-buddha-new-york
+>>>>>>> 5c439553b6201a1623f0da1f311896abb1cb122d
   categories:
   - Bars
   - bars
   hours:
+<<<<<<< HEAD
   - 11:00 am - 1:00 am
   rating: 4.0
   open_now: false
@@ -505,11 +730,42 @@
   address: 12 John St
   image: http://s3-media1.fl.yelpcdn.com/bphoto/KGVlbPRyVqjclYuOwnCJKQ/ms.jpg
   url: http://www.yelp.com/biz/go-go-curry-world-trade-center-stadium-new-york-2
+=======
+  - 5:00 pm - 4:00 am
+  rating: 4.0
+  open_now: true
+  distance: 0.31
+- !ruby/object:YelpBiz
+  name: Gena's Grill
+  address: 210 1st Ave
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/4fUc32wwJXCUR7pStSmsvg/ms.jpg
+  url: http://www.yelp.com/biz/genas-grill-new-york
+  categories:
+  - Dominican
+  - dominican
+  hours:
+  - 7:00 am - 11:00 pm
+  rating: 4.0
+  open_now: true
+  distance: 0.27
+- !ruby/object:YelpBiz
+  name: Kyo Ya
+  address: 94 E 7th St
+  image: http://s3-media4.fl.yelpcdn.com/bphoto/nvnk0aSAiPu8IwV8W3hx8g/ms.jpg
+  url: http://www.yelp.com/biz/kyo-ya-new-york
+>>>>>>> 5c439553b6201a1623f0da1f311896abb1cb122d
   categories:
   - Japanese
   - japanese
   hours:
+<<<<<<< HEAD
   - 10:00 am - 9:00 pm
   rating: 4.0
   open_now: true
   distance: 0.42
+=======
+  - 5:30 pm - 11:30 pm
+  rating: 4.5
+  open_now: true
+  distance: 0.02
+>>>>>>> 5c439553b6201a1623f0da1f311896abb1cb122d

@@ -3,7 +3,7 @@ require_relative 'environment'
 class YelpBiz
   attr_reader :name, :address, :image, :url, :categories, :yelp_biz_hours, :open_now, :lat, :lon, :rating,:categories,:distance
   attr_accessor :hours 
-  HEADERS_HASH = {"User-Agent" => "Ruby/#{RUBY_VERSION}"}
+  HEADERS_HASH = {"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"}
  
   @@all = []
   @@shuffled = []
@@ -23,13 +23,18 @@ class YelpBiz
   ######Class Methods#############################
   def self.get_api_key
     path="./yelp_api_key.txt"
-    api_keys = {}
-    File.open(path) do |fp|
-      fp.each do |line|
-        key, value = line.chomp.split(" ")
-        api_keys[key.to_sym] = value
-      end
-    end
+    api_keys = {
+      :consumer_key => "rafKiIALsdfrzJApEFRKAQ",
+      :consumer_secret => "KwwBZUvezUTV8az3j-6EYSW2YNg",
+      :token => "JP3tJKYEbNeFNO_J7MlIRzIdWtlodlX-",
+      :token_secret => "LlIJAA1JY1rHuYhfdPqq5xbz1FQ"}
+    
+    # File.open(path) do |fp|
+    #   fp.each do |line|
+    #     key, value = line.chomp.split(" ")
+    #     api_keys[key.to_sym] = value
+    #   end
+    # end
      @@api_keys = api_keys
   end
 
@@ -58,9 +63,11 @@ class YelpBiz
   def self.get_hours(url, index)
     #scrape for hours, return array with hours string
     # puts "Found #{index +1} fooderies, getting hours"
+    puts url
     parse = Nokogiri::HTML(open("#{url}",HEADERS_HASH))
+    puts "Got #{index}"
     parse.search("span.hour-range").collect {|name| name.text}
- 
+    
   end
 
 
@@ -92,6 +99,7 @@ class YelpBiz
     
     
     time_now = Time.new
+    puts time_now
     
     open_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:o_hour],yelp_biz_hours[:o_min])
     
