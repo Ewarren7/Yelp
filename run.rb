@@ -15,11 +15,6 @@ def make_bizs(dev = false)
     locale = {lang: 'eng'}
     yelp_api_results = Yelp::Client.new(YelpBiz.get_api_key)
 
-
-
-
-
-
     search1 = Thread.new {
       yelp_api_results.search_by_coordinates(YelpBiz.loc,params,locale).businesses[0..1].each_with_index do |value, index|
       name = value.name
