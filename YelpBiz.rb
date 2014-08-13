@@ -99,6 +99,7 @@ class YelpBiz
     
     
     time_now = Time.new
+    puts time_now
     
     open_time = Time.new(time_now.year,time_now.month,time_now.day,yelp_biz_hours[:o_hour],yelp_biz_hours[:o_min])
     
